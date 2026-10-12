@@ -1,0 +1,24 @@
+{
+  "name": "brand-safety-lab",
+  "version": "1.0.0",
+  "description": "Student-facing interactive lab: judge post + ad adjacencies as SAFE or UNSAFE, tag unsafe ones with a GARM category, export a CSV for Canvas submission. 30-minute timer, Identikey login, all state in browser localStorage.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules --test tests/lab.flow.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjvargo/brand-safety-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/chrisjvargo/brand-safety-lab/issues"
+  },
+  "homepage": "https://github.com/chrisjvargo/brand-safety-lab#readme",
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

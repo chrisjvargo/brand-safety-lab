@@ -26,6 +26,21 @@ Recovered Oct 2026 from the Spring 2026 AWS Elastic Beanstalk deployment
 3. Eight media files missing from the working copy were restored from the
    final Beanstalk app zip before staging.
 4. `.nojekyll` disables Jekyll processing on Pages.
+5. `tests/lab.flow.test.mjs` (`npm test`, needs `npm i` once) drives the real
+   `app.js` in jsdom: login, both feed batches, safe/unsafe judging, GARM
+   dialog, hints, blur, references, analytics, CSV export, reset, timer.
+6. 217 unreferenced spare images (~51 MB) were pruned from this repo; the
+   instructor source keeps them.
+
+## UI/UX debug fixes (Oct 2026, mirrored to instructor source)
+
+- Removed `trimHistory`: it deleted judged feed items once 48 nodes passed the
+  36-node cap, with no way to get them back.
+- The 30-minute timer now starts at login instead of page load.
+- CSV export is blocked until at least one placement is judged, and the file
+  is named `<identikey>-<timestamp>.csv` so submissions map to students.
+- Student-facing copy: dropped "facilitation notes" (no such feature) and the
+  "local mirror" builder note.
 
 ## Run locally
 

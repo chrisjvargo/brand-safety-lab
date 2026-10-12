@@ -2,7 +2,6 @@ const STORAGE_KEY = "brandSafetyLab.labels";
 const IDENTIKEY_STORAGE_KEY = "brandSafetyLab.identikey";
 const TIMER_SECONDS = 30 * 60;
 const BATCH_SIZE = 12;
-const MAX_POSTS_IN_DOM = 36;
 const DATA_ROOT = new URL("./data/", import.meta.url);
 
 const state = {
@@ -58,7 +57,6 @@ async function init() {
     updateLabeledCounter();
     updateQueueCounter();
     updateHintCounter();
-    startTimer(TIMER_SECONDS);
     setupInfiniteScroll();
     loadNextBatch();
     setupLogin();
@@ -96,6 +94,7 @@ function setupLogin() {
     document.body.classList.remove("login-active");
     input.value = state.identikey;
     Object.keys(state.labels).forEach(applyAnswerFeedback);
+    startTimer(TIMER_SECONDS);
     return;
   }
 
@@ -119,6 +118,7 @@ function setupLogin() {
       localStorage.setItem(IDENTIKEY_STORAGE_KEY, value);
       overlay.hidden = true;
       document.body.classList.remove("login-active");
+      startTimer(TIMER_SECONDS);
       alert("Thanks for jumping in! You’ll be graded on how thoughtfully you engage—make your best call, learn from the gold standard, and have fun.");
       Object.keys(state.labels).forEach(applyAnswerFeedback);
     });
@@ -179,7 +179,6 @@ function loadNextBatch() {
   if (!batch.length) return;
   renderBatch(batch);
   updateQueueCounter();
-  trimHistory();
 }
 
 function takeNextBatch() {
@@ -450,7 +449,7 @@ function applyAnswerFeedback(id) {
     feedbackEl.textContent += correct ? ` • You selected: ${labelGarm}` : ` • You selected: ${labelGarm || "None"}`;
   }
 
-  if ((correct || !correct) && answer.notes) {
+  if (answer.notes) {
     feedbackEl.textContent += ` – ${answer.notes}`;
   }
 }
@@ -587,6 +586,10 @@ function buildAnalytics() {
 }
 
 function exportCsv() {
+  if (!Object.keys(state.labels).length) {
+    alert("Judge at least one placement before exporting.");
+    return;
+  }
   const header = ["identikey", "ad_id", "brand", "brand_key", "post_id", "decision", "garm", "timestamp"];
   const rows = Object.entries(state.labels).map(([id, label]) => ([
     state.identikey || "",
@@ -603,7 +606,7 @@ function exportCsv() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `session-${Date.now()}.csv`;
+  link.download = `${state.identikey || "session"}-${Date.now()}.csv`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -652,18 +655,6 @@ function updateQueueCounter() {
 
 function updateHintCounter() {
   document.getElementById("hintCount").textContent = state.hintCount;
-}
-
-function trimHistory() {
-  const timeline = document.getElementById("timeline");
-  const posts = timeline.querySelectorAll(".post");
-  if (posts.length <= MAX_POSTS_IN_DOM) return;
-  const excess = posts.length - MAX_POSTS_IN_DOM;
-  for (let i = 0; i < excess; i += 1) {
-    const post = posts[i];
-    state.rendered.delete(post.dataset.id);
-    post.remove();
-  }
 }
 
 async function fetchJSON(path) {
