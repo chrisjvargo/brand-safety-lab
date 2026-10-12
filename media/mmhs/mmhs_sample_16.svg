@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#17212b"/>
+  <rect x="40" y="40" width="560" height="280" rx="24" fill="#1d9bf0" fill-opacity="0.25" stroke="#1d9bf0" stroke-dasharray="12 12" stroke-width="4"/>
+  <text x="50%" y="50%" fill="#8899a6" font-family="Segoe UI, system-ui, sans-serif" font-size="32" text-anchor="middle" dominant-baseline="middle">
+    MMHS media placeholder
+  </text>
+</svg>

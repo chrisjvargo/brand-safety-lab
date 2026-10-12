@@ -1,0 +1,35 @@
+{
+  "nike-speedlab": {
+    "decision": "ACCEPTABLE",
+    "notes": "Performance storytelling aligns with Nike's comfort zone."
+  },
+  "lego-delorean": {
+    "decision": "ACCEPTABLE",
+    "notes": "Family-friendly nostalgia matches LEGO's suitability profile."
+  },
+  "adidas-slipon": {
+    "decision": "ACCEPTABLE",
+    "notes": "Product-focused creative with athletes fits Adidas' tone."
+  },
+  "amazon-holiday-hiring": {
+    "decision": "ACCEPTABLE",
+    "notes": "Seasonal hiring push is a routine business story with no major risk flags."
+  },
+  "slimlife-scam": {
+    "decision": "UNSAFE",
+    "garm": "Spam or Harmful Content (malware/phishing)",
+    "notes": "Miracle weight-loss chum box ad with phishing-style funnel\u2014classic spam/malware risk."
+  },
+  "apple-upgrade-alert": {
+    "decision": "ACCEPTABLE",
+    "notes": "Promotional coverage around deals aligns with Apple messaging."
+  },
+  "cocacola-seasonal": {
+    "decision": "ACCEPTABLE",
+    "notes": "Seasonal celebrations are on-brand for Coca-Cola."
+  },
+  "liquiddeath-mango": {
+    "decision": "ACCEPTABLE",
+    "notes": "Edgy beverage positioning matches Liquid Death's risk tolerance."
+  }
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80">
+  <rect width="160" height="80" rx="16" fill="#15202b"/>
+  <path d="M118 24c-16 13-38 24-58 28-12 2-26 0-38-5 16 11 36 17 56 15 23-2 45-14 64-38-8 4-16 6-24 6z" fill="#e6e6e6"/>
+  <text x="20" y="60" fill="#1d9bf0" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="600">NIKE</text>
+</svg>

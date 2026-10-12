@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test</title></head>
+<body>
+<h1>Data Loading Test</h1>
+<pre id="result">Loading...</pre>
+<script type="module">
+  const result = document.getElementById('result');
+  try {
+    const DATA_ROOT = new URL("./data/", import.meta.url);
+    result.textContent = `DATA_ROOT: ${DATA_ROOT}\n\n`;
+    
+    const res = await fetch(new URL("taxonomy.json", DATA_ROOT));
+    result.textContent += `Fetch status: ${res.status}\n`;
+    
+    if (res.ok) {
+      const data = await res.json();
+      result.textContent += `Success! Got ${Object.keys(data).length} keys\n`;
+      result.textContent += JSON.stringify(data, null, 2).substring(0, 500);
+    } else {
+      result.textContent += `Failed: ${res.statusText}`;
+    }
+  } catch(e) {
+    result.textContent = `Error: ${e.message}\n${e.stack}`;
+  }
+</script>
+</body>
+</html>
+

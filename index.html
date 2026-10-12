@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand Safety Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loginOverlay" class="login-overlay" role="dialog" aria-modal="true">
+    <form id="loginForm" class="login-card" onsubmit="return false;">
+      <h2>Welcome to Brand Safety Lab</h2>
+      <p class="login-message">
+        Enter your Identikey to begin. You'll be graded on the engagement you bring to the lab—there is a right and wrong answer, but the goal is to participate, explore the nuances, and have fun while learning.
+      </p>
+      <label for="identikeyInput">Identikey</label>
+      <input id="identikeyInput" name="identikey" type="text" autocomplete="off" required placeholder="abc1234">
+      <p class="login-error" id="loginError" role="alert" hidden></p>
+      <button type="submit">Start the lab</button>
+    </form>
+  </div>
+  <div class="app-layout">
+    <main id="timeline" class="timeline" aria-live="polite">
+      <div class="timeline-banner" role="note">
+        <h1>Brand Safety Lab</h1>
+        <div class="session-bar">
+          <div class="session-stats">
+            <div class="session-stat">
+              <span class="label">Timer</span>
+              <span id="timer">30:00</span>
+            </div>
+            <div class="session-stat">
+              <span class="label">Labeled</span>
+              <span id="labeledCount">0</span>
+            </div>
+          </div>
+          <div class="session-actions">
+            <button id="exportCsv" type="button">Export CSV</button>
+            <button id="openAnalytics" type="button">View analytics</button>
+            <button id="resetSession" type="button">Reset</button>
+          </div>
+        </div>
+        <p>Review each post, then decide whether the branded ad that follows is a <strong>safe adjacency</strong> or should be blocked. If you choose <strong>Unsafe adjacency</strong>, you’ll also tag the correct GARM category.</p>
+      </div>
+      <div id="sentinel" aria-hidden="true"></div>
+    </main>
+
+    <aside class="rail right" aria-label="Guidance">
+      <div class="panel">
+        <h3>Ad placement checklist</h3>
+        <p>After each post you’ll see a live ad creative.</p>
+        <ul>
+          <li>Ask: does the post align with the brand’s tone and thresholds?</li>
+          <li>Choose <strong>Safe adjacency</strong> if the ad can stay.</li>
+          <li>Choose <strong>Unsafe adjacency</strong> if the brand should block this placement.</li>
+        </ul>
+        <p class="note">
+          Focus on the <em>pairing</em> of content and ad. Capture notable edge cases in your facilitation notes.
+        </p>
+      </div>
+      <div class="panel about">
+        <h3>About this lab</h3>
+        <p><strong>Brand Safety Floor</strong> = content no ads should ever fund.</p>
+        <p><strong>Brand Suitability</strong> = managed adjacency at High / Medium / Low risk depending on your brand values.</p>
+        <p>Datasets: MMHS150K (multimodal hate speech) + MediaEval 2016 VMU (multimedia misinformation). Local mirror is required for classroom use.</p>
+        <a href="#" id="openReferences">View references</a>
+      </div>
+      <div class="panel queue">
+        <h3>Progress</h3>
+        <dl>
+          <div><dt>Queue</dt><dd><span id="queueRemaining">—</span> remaining</dd></div>
+          <div><dt>Ambiguity hints</dt><dd><span id="hintCount">0</span></dd></div>
+        </dl>
+      </div>
+    </aside>
+  </div>
+
+  <template id="postTemplate">
+    <article class="post" data-id="">
+      <header>
+        <img class="avatar" alt="">
+        <div class="meta">
+          <div class="line1">
+            <span class="displayName"></span>
+            <span class="verified" title="Verified">✔︎</span>
+            <span class="handle"></span>
+            <time class="time"></time>
+          </div>
+        </div>
+        <button class="hint" type="button" aria-label="Edge case hint" hidden>⚠️</button>
+      </header>
+      <div class="text"></div>
+      <div class="media blurred" tabindex="0" aria-label="Post media"></div>
+    </article>
+  </template>
+
+  <template id="adTemplate">
+    <article class="post ad-card" data-id="">
+      <header>
+        <img class="brandLogo" alt="">
+        <div class="meta">
+          <div class="line1">
+            <span class="brandName"></span>
+            <span class="sponsored">Sponsored</span>
+          </div>
+          <div class="line2">
+            <span class="placement-note"></span>
+          </div>
+        </div>
+      </header>
+      <div class="ad-media"></div>
+      <div class="ad-copy">
+        <p class="tagline"></p>
+        <h4 class="headline"></h4>
+        <p class="body"></p>
+        <a class="cta" href="#" target="_blank" rel="noopener">Learn more</a>
+      </div>
+      <footer class="actions">
+        <div class="action-group">
+          <button class="ok" type="button">Safe adjacency</button>
+          <button class="unsafe" type="button">Unsafe adjacency</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </footer>
+    </article>
+  </template>
+
+  <dialog id="garmDialog" class="garm-dialog" aria-labelledby="garmDialogTitle">
+    <form method="dialog">
+      <header>
+        <h2 id="garmDialogTitle">Pick the GARM category</h2>
+        <p id="garmDialogSubtitle"></p>
+      </header>
+      <p class="garm-error" id="garmError" hidden>Select the category that best matches this unsafe placement.</p>
+      <div id="garmGrid" class="garm-grid"></div>
+      <menu>
+        <button type="reset" value="cancel" data-action="cancel">Cancel</button>
+        <button type="submit" value="default" data-action="save">Save</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <dialog id="referencesDialog" aria-labelledby="referencesTitle">
+    <form method="dialog">
+      <h2 id="referencesTitle">Sources &amp; further reading</h2>
+      <ul id="referenceList"></ul>
+      <menu>
+        <button value="close">Close</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <dialog id="analyticsDialog" aria-labelledby="analyticsTitle">
+    <form method="dialog">
+      <header class="dialog-header">
+        <h2 id="analyticsTitle">Live analytics</h2>
+      </header>
+      <section>
+        <h3>Heat map preview</h3>
+        <div id="heatmapPlaceholder" class="heatmap-placeholder">Aggregate data appears here once multiple exports are merged.</div>
+      </section>
+      <section>
+        <h3>Most divisive posts</h3>
+        <ol id="divisiveList" class="divisive-list"></ol>
+      </section>
+      <menu>
+        <button value="close">Close</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

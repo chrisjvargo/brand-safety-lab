@@ -1,0 +1,917 @@
+{
+  "pages": [
+    [
+      {
+        "id": "mmhs_0001",
+        "source": "MMHS150K",
+        "created_at": "2019-03-21T18:22:13Z",
+        "author": {
+          "name": "Running Talk",
+          "handle": "@runforum",
+          "verified": false,
+          "avatar": "media/avatars/runforum.svg"
+        },
+        "text": "Still buzzing from the marathon last night. Crowd chanting \"run till we own the night\" \u2014 pure adrenaline.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_0001.jpg",
+            "alt": "Runners charge down a city street toward the marathon finish line at night",
+            "credit": {
+              "name": "Kenneth Schipper",
+              "profile": "https://unsplash.com/@kennethsv",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Sports"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [],
+        "suggested_risk": "LOW",
+        "notes": "Safe adjacency calibration example."
+      },
+      {
+        "id": "mmhs_0184",
+        "source": "MMHS150K",
+        "created_at": "2018-11-09T04:11:07Z",
+        "author": {
+          "name": "Sarcasm Daily",
+          "handle": "@sarcasmdaily",
+          "verified": false,
+          "avatar": "media/avatars/sarcasm.svg"
+        },
+        "text": "\"Guess we let any clown run the country now \ud83d\ude02\" \u2014 meme caption over a politician in circus makeup.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_0184.jpg",
+            "alt": "Protester holding a poster of a politician with clown makeup",
+            "credit": {
+              "name": "Jannes Van den wouwer",
+              "profile": "https://unsplash.com/@jannesvdw",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Debated Sensitive Social Issues"
+        ],
+        "suggested_risk": "MEDIUM",
+        "notes": "Satire vs. insult. Debate suitability vs. sensitive issues."
+      },
+      {
+        "id": "mmhs_0521",
+        "source": "MMHS150K",
+        "created_at": "2017-05-12T16:51:34Z",
+        "author": {
+          "name": "Toxic Takes",
+          "handle": "@toxictakes",
+          "verified": false,
+          "avatar": "media/avatars/toxic.svg"
+        },
+        "text": "These people are animals. Ship them back where they came from. #purity",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_0521.jpg",
+            "alt": "Defaced brick wall covered in hateful graffiti slogans",
+            "credit": {
+              "name": "Danielle Benoit",
+              "profile": "https://unsplash.com/@daniellebenoit",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "racist",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Hate Speech & Acts of Aggression"
+        ],
+        "suggested_risk": "FLOOR",
+        "notes": "Clear hate speech with imagery; should trigger blur."
+      },
+      {
+        "id": "mmhs_0772",
+        "source": "MMHS150K",
+        "created_at": "2019-01-05T23:12:45Z",
+        "author": {
+          "name": "Locker Room Laughs",
+          "handle": "@lockerroomlol",
+          "verified": false,
+          "avatar": "media/avatars/lockerroom.svg"
+        },
+        "text": "Our captain after that buzzer beater: \"I told y'all we ain't losing tonight\" \ud83d\ude24\ud83d\udd25 (audio explicit)",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_0772.jpg",
+            "alt": "Basketball teammates celebrating together in a locker room",
+            "credit": {
+              "name": "Taiki Ishikawa",
+              "profile": "https://unsplash.com/@fl__q",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Sports"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Obscenity & Profanity / Gory or Shocking"
+        ],
+        "suggested_risk": "LOW",
+        "notes": "Profanity as emphasis; good for persona comparison."
+      },
+      {
+        "id": "mmhs_0945",
+        "source": "MMHS150K",
+        "created_at": "2018-10-18T09:08:02Z",
+        "author": {
+          "name": "Counterfeit Alerts",
+          "handle": "@piracywatch",
+          "verified": false,
+          "avatar": "media/avatars/piracy.svg"
+        },
+        "text": "Stream the fight FREE tonight \ud83d\udc49 shady.site/live #ppv #boxing",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_0945.jpg",
+            "alt": "Laptop streaming a boxing match with chat comments nearby",
+            "credit": {
+              "name": "Platforma za Dru\u0161tveni centar \u010cakovec",
+              "profile": "https://unsplash.com/@pdcck",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Sports",
+            "Technology"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Online Piracy"
+        ],
+        "suggested_risk": "HIGH",
+        "notes": "Piracy prompt. Connect to ads adjacent to illegal streams."
+      },
+      {
+        "id": "mmhs_1010",
+        "source": "MMHS150K",
+        "created_at": "2019-02-02T13:44:11Z",
+        "author": {
+          "name": "Community Pride",
+          "handle": "@pridevoices",
+          "verified": true,
+          "avatar": "media/avatars/pridevoices.svg"
+        },
+        "text": "We love our queer fam. Reclaim the word, wear it loud. \ud83c\udff3\ufe0f\u200d\ud83c\udf08",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_1010.jpg",
+            "alt": "Friends waving a large rainbow pride flag during a march",
+            "credit": {
+              "name": "Chiara Guercio",
+              "profile": "https://unsplash.com/@chiara_01",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Family & Relationships",
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Debated Sensitive Social Issues"
+        ],
+        "suggested_risk": "LOW",
+        "notes": "Reclaimed language; challenge bias in automation."
+      },
+      {
+        "id": "mmhs_1189",
+        "source": "MMHS150K",
+        "created_at": "2019-06-29T04:05:56Z",
+        "author": {
+          "name": "Shock Factor",
+          "handle": "@shockfactor",
+          "verified": false,
+          "avatar": "media/avatars/shockfactor.svg"
+        },
+        "text": "Can't believe this accident \ud83d\ude33 (graphic!)",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_1189.jpg",
+            "alt": "Nighttime responders working beside a wrecked car",
+            "credit": {
+              "name": "Toni FTP",
+              "profile": "https://unsplash.com/@ftptoni",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Obscenity & Profanity / Gory or Shocking",
+          "Death, Injury or Military Conflict"
+        ],
+        "suggested_risk": "HIGH",
+        "notes": "Blur recommended; imagery flagged graphic."
+      },
+      {
+        "id": "mmhs_1402",
+        "source": "MMHS150K",
+        "created_at": "2018-04-01T20:02:42Z",
+        "author": {
+          "name": "PhishFinder",
+          "handle": "@phishfinder",
+          "verified": false,
+          "avatar": "media/avatars/phishfinder.svg"
+        },
+        "text": "\ud83d\udea8 Scam DM blasting \u2018miracle weight-loss drops\u2019 if you just pay shipping. Report @nike_free_swag before someone hands over their card.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_1402.jpg",
+            "alt": "Person reading a suspicious weight-loss offer on a smartphone",
+            "credit": {
+              "name": "Sweet Life",
+              "profile": "https://unsplash.com/@sweetlifediabetes",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Technology",
+            "News & Politics"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Spam or Harmful Content (malware/phishing)"
+        ],
+        "suggested_risk": "FLOOR",
+        "notes": "Brand impersonation; highlight security risk."
+      },
+      {
+        "id": "mmhs_1550",
+        "source": "MMHS150K",
+        "created_at": "2019-07-15T11:08:27Z",
+        "author": {
+          "name": "Satire Wire",
+          "handle": "@satirewire",
+          "verified": false,
+          "avatar": "media/avatars/satirewire.svg"
+        },
+        "text": "BREAKING: Local town bans clouds. Residents demand blue sky equity. \ud83d\ude43",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_1550.jpg",
+            "alt": "Dark swirling storm clouds above a small town street",
+            "credit": {
+              "name": "Francesco Ungaro",
+              "profile": "https://unsplash.com/@francesco_ungaro",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Arts & Entertainment"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [],
+        "suggested_risk": "LOW",
+        "notes": "Safe satire; clarifies tone detection."
+      },
+      {
+        "id": "mmhs_1661",
+        "source": "MMHS150K",
+        "created_at": "2018-12-01T14:52:19Z",
+        "author": {
+          "name": "StreetPulse",
+          "handle": "@streetpulse",
+          "verified": false,
+          "avatar": "media/avatars/streetpulse.svg"
+        },
+        "text": "Thread: Protest today turned violent. Video shows clashes downtown.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "src": "media/vmu/vmu_sample_01.mp4",
+            "poster": "media/vmu/vmu_poster_01.jpg"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "real"
+        },
+        "suggested_garm": [
+          "Death, Injury or Military Conflict"
+        ],
+        "suggested_risk": "MEDIUM",
+        "notes": "Legitimate reporting; evaluate adjacency tolerance."
+      },
+      {
+        "id": "vmu_0204",
+        "source": "VMU",
+        "created_at": "2016-09-15T07:31:08Z",
+        "author": {
+          "name": "BreakingStorm",
+          "handle": "@stormwatch",
+          "verified": true,
+          "avatar": "media/avatars/stormwatch.svg"
+        },
+        "text": "Viral photo shows a shark swimming down highway floodwaters in Houston. Believe it?",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/vmu/vmu_sample_02.jpg",
+            "alt": "Manipulated photo of shark on flooded highway"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Science"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "fake"
+        },
+        "suggested_garm": [
+          "Misinformation"
+        ],
+        "suggested_risk": "FLOOR",
+        "notes": "Classic misinfo; pair with debate on harm."
+      },
+      {
+        "id": "vmu_0411",
+        "source": "VMU",
+        "created_at": "2016-11-02T21:19:45Z",
+        "author": {
+          "name": "CrisisCam",
+          "handle": "@crisiscam",
+          "verified": false,
+          "avatar": "media/avatars/crisiscam.svg"
+        },
+        "text": "Video: Hospital in Aleppo after overnight bombing. Viewer discretion advised.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "src": "media/vmu/vmu_sample_03.mp4",
+            "poster": "media/vmu/vmu_poster_02.jpg"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "real"
+        },
+        "suggested_garm": [
+          "Death, Injury or Military Conflict"
+        ],
+        "suggested_risk": "HIGH",
+        "notes": "Real conflict footage; triggers blur."
+      },
+      {
+        "id": "vmu_0502",
+        "source": "VMU",
+        "created_at": "2016-10-01T12:05:22Z",
+        "author": {
+          "name": "FactCheckNow",
+          "handle": "@factchecknow",
+          "verified": true,
+          "avatar": "media/avatars/factchecknow.svg"
+        },
+        "text": "Rumor control: The 'storm approaching NYC' video is recycled from 2012. Debunked \u274c",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/vmu/vmu_sample_04.jpg",
+            "alt": "Side-by-side comparison of weather footage"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Science"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "real"
+        },
+        "suggested_garm": [
+          "Misinformation"
+        ],
+        "suggested_risk": "LOW",
+        "notes": "Counter-misinformation; sparks debate on suitability for fact-checking."
+      }
+    ],
+    [
+      {
+        "id": "mmhs_1770",
+        "source": "MMHS150K",
+        "created_at": "2019-08-21T18:22:13Z",
+        "author": {
+          "name": "Meme Brigade",
+          "handle": "@memebrigade",
+          "verified": false,
+          "avatar": "media/avatars/memebrigade.svg"
+        },
+        "text": "When the squad says \"let's get this bread\" and you bring artisanal gluten-free baguettes \ud83d\ude02",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_1770.jpg",
+            "alt": "Friends laughing together over fresh loaves at a bakery counter",
+            "credit": {
+              "name": "Huy L\u1ed9c",
+              "profile": "https://unsplash.com/@huylocnam",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Arts & Entertainment",
+            "Food & Drink"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [],
+        "suggested_risk": "LOW",
+        "notes": "Lighthearted control example."
+      },
+      {
+        "id": "mmhs_1855",
+        "source": "MMHS150K",
+        "created_at": "2018-02-13T09:40:03Z",
+        "author": {
+          "name": "StreetDocs",
+          "handle": "@streetdocs",
+          "verified": false,
+          "avatar": "media/avatars/streetdocs.svg"
+        },
+        "text": "Documentary still: police clash with protesters after curfew announcement. Full film drops Friday.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_1855.jpg",
+            "alt": "Riot police advancing toward protesters at night",
+            "credit": {
+              "name": "AJ Colores",
+              "profile": "https://unsplash.com/@ajcolores",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Death, Injury or Military Conflict"
+        ],
+        "suggested_risk": "MEDIUM",
+        "notes": "Documentary context vs. sensational conflict."
+      },
+      {
+        "id": "mmhs_1991",
+        "source": "MMHS150K",
+        "created_at": "2019-03-04T16:40:22Z",
+        "author": {
+          "name": "Underground Streams",
+          "handle": "@undergroundHD",
+          "verified": false,
+          "avatar": "media/avatars/undergroundhd.svg"
+        },
+        "text": "Link in bio for full cracked episode \u2014 no ads, all thrills. #watchfree",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_1991.jpg",
+            "alt": "Podcast host recording in a studio setup with a microphone",
+            "credit": {
+              "name": "XT7 Core",
+              "profile": "https://unsplash.com/@xt7core",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Arts & Entertainment",
+            "Technology"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Online Piracy"
+        ],
+        "suggested_risk": "FLOOR",
+        "notes": "Explicit piracy CTA."
+      },
+      {
+        "id": "mmhs_2050",
+        "source": "MMHS150K",
+        "created_at": "2017-09-07T22:32:17Z",
+        "author": {
+          "name": "RageRoom",
+          "handle": "@rageroom",
+          "verified": false,
+          "avatar": "media/avatars/rageroom.svg"
+        },
+        "text": "Those monsters deserve what\u2019s coming. No mercy for traitors.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_2050.jpg",
+            "alt": "Angry crowd holding torches and shouting after dark",
+            "credit": {
+              "name": "Hert Niks",
+              "profile": "https://unsplash.com/@hertwashere",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "racist",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Hate Speech & Acts of Aggression"
+        ],
+        "suggested_risk": "FLOOR",
+        "notes": "Overt dehumanization; classifies as Floor."
+      },
+      {
+        "id": "mmhs_2121",
+        "source": "MMHS150K",
+        "created_at": "2018-06-13T18:15:47Z",
+        "author": {
+          "name": "NightBeat News",
+          "handle": "@nightbeat",
+          "verified": true,
+          "avatar": "media/avatars/nightbeat.svg"
+        },
+        "text": "Investigative thread: vaping products targeting teens with candy flavors. Parents weigh in.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_2121.jpg",
+            "alt": "Display case filled with colorful vaping devices",
+            "credit": {
+              "name": "Kelvin Zyteng",
+              "profile": "https://unsplash.com/@zyteng",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Health",
+            "News & Politics"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)"
+        ],
+        "suggested_risk": "HIGH",
+        "notes": "Legit reporting; debate suitability by persona."
+      },
+      {
+        "id": "mmhs_2307",
+        "source": "MMHS150K",
+        "created_at": "2019-05-19T05:07:19Z",
+        "author": {
+          "name": "Skate Raw",
+          "handle": "@skateraw",
+          "verified": false,
+          "avatar": "media/avatars/skateraw.svg"
+        },
+        "text": "Eat it, corporate sellouts \ud83e\udd18 (language). Dropping the uncut slam reel tonight.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "src": "media/vmu/vmu_sample_04.mp4",
+            "poster": "media/vmu/vmu_poster_03.jpg"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "Sports",
+            "Arts & Entertainment"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Obscenity & Profanity / Gory or Shocking"
+        ],
+        "suggested_risk": "MEDIUM",
+        "notes": "Profanity + mild injury clips; useful for Liquid Death persona."
+      },
+      {
+        "id": "mmhs_2450",
+        "source": "MMHS150K",
+        "created_at": "2017-04-02T07:22:54Z",
+        "author": {
+          "name": "Global Aid Watch",
+          "handle": "@aidwatch",
+          "verified": true,
+          "avatar": "media/avatars/aidwatch.svg"
+        },
+        "text": "Relief teams arrive after cyclone. Donations fund medical tents & clean water.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_2450.jpg",
+            "alt": "Relief workers unloading emergency supplies after a cyclone",
+            "credit": {
+              "name": "teguhyudhatama",
+              "profile": "https://unsplash.com/@teguhyudhatama",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Travel"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Death, Injury or Military Conflict"
+        ],
+        "suggested_risk": "MEDIUM",
+        "notes": "Tragedy adjacency but humanitarian tone."
+      },
+      {
+        "id": "mmhs_2602",
+        "source": "MMHS150K",
+        "created_at": "2018-11-21T12:55:31Z",
+        "author": {
+          "name": "Policy Watchdog",
+          "handle": "@policywatch",
+          "verified": false,
+          "avatar": "media/avatars/policywatch.svg"
+        },
+        "text": "Op-ed: debating the new election law and its impact on turnout.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/posts/mmhs_2602.jpg",
+            "alt": "Community members debating policy during a town hall meeting",
+            "credit": {
+              "name": "Ernie Journeys",
+              "profile": "https://unsplash.com/@erniejourneys",
+              "source": "Unsplash"
+            }
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Sensitive Social Issues"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "other",
+          "vmu_label": "unknown"
+        },
+        "suggested_garm": [
+          "Debated Sensitive Social Issues"
+        ],
+        "suggested_risk": "MEDIUM",
+        "notes": "Policy debate; good for suitability nuance."
+      },
+      {
+        "id": "vmu_0620",
+        "source": "VMU",
+        "created_at": "2016-12-04T15:32:27Z",
+        "author": {
+          "name": "WorldVerify",
+          "handle": "@worldverify",
+          "verified": false,
+          "avatar": "media/avatars/worldverify.svg"
+        },
+        "text": "Clip claims to show last night's blackout, but footage traces to 2015 film set. False context.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "video",
+            "src": "media/vmu/vmu_sample_05.mp4",
+            "poster": "media/vmu/vmu_poster_04.jpg"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Technology"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "fake"
+        },
+        "suggested_garm": [
+          "Misinformation"
+        ],
+        "suggested_risk": "FLOOR",
+        "notes": "Video miscontextualization; includes debunk."
+      },
+      {
+        "id": "vmu_0754",
+        "source": "VMU",
+        "created_at": "2016-09-29T10:44:12Z",
+        "author": {
+          "name": "Global Eye",
+          "handle": "@globaleye",
+          "verified": true,
+          "avatar": "media/avatars/globaleye.svg"
+        },
+        "text": "Live briefing: ceasefire negotiations continue despite overnight shelling.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/vmu/vmu_sample_06.jpg",
+            "alt": "Newsroom graphic about ceasefire"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "real"
+        },
+        "suggested_garm": [
+          "Death, Injury or Military Conflict"
+        ],
+        "suggested_risk": "MEDIUM",
+        "notes": "Conflict reporting; evaluate tolerance per brand persona."
+      },
+      {
+        "id": "vmu_0801",
+        "source": "VMU",
+        "created_at": "2016-08-18T19:01:44Z",
+        "author": {
+          "name": "InvestigateDaily",
+          "handle": "@investigatedaily",
+          "verified": false,
+          "avatar": "media/avatars/investigatedaily.svg"
+        },
+        "text": "Thread exposing fake charity stealing wildfire donations. Receipts in comments.",
+        "lang": "en",
+        "media": [
+          {
+            "type": "image",
+            "src": "media/vmu/vmu_sample_07.jpg",
+            "alt": "Screenshots of fraudulent charity page"
+          }
+        ],
+        "context": {
+          "iab_topic": [
+            "News & Politics",
+            "Family & Relationships"
+          ]
+        },
+        "ground_truth": {
+          "mmhs_label": "not_hate",
+          "vmu_label": "real"
+        },
+        "suggested_garm": [
+          "Spam or Harmful Content (malware/phishing)"
+        ],
+        "suggested_risk": "HIGH",
+        "notes": "Fraud exposure; spark debate on adjacency."
+      }
+    ]
+  ]
+}

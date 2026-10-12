@@ -1,0 +1,121 @@
+{
+  "garm": {
+    "about": {
+      "floor_note": "Brand Safety Floor = content no ads should ever fund.",
+      "suitability_note": "Brand Suitability = controlled adjacency to sensitive content at High/Med/Low risk based on brand values.",
+      "sources": [
+        {
+          "label": "GARM Brand Safety Floor & Suitability Framework (June 2022)",
+          "url": "https://wfanet.org/knowledge/item/2022/06/17/GARM-Brand-Safety-Floor-Suitability-Framework"
+        },
+        {
+          "label": "WFA announcement: Discontinuation of GARM (Aug 9, 2024)",
+          "url": "https://wfanet.org/knowledge/item/2024/08/09/wfa-garm-update"
+        }
+      ]
+    },
+    "categories": [
+      {
+        "id": "adult_explicit",
+        "name": "Adult & Explicit Sexual Content",
+        "tooltip": "Includes pornography, explicit sexual acts, fetish content, escorting, or exploitation.",
+        "floor": true
+      },
+      {
+        "id": "arms_ammunition",
+        "name": "Arms & Ammunition",
+        "tooltip": "Weapons manufacturing, sales, or instruction. Includes illicit firearms trafficking.",
+        "floor": true
+      },
+      {
+        "id": "crime_harm",
+        "name": "Crime & Harmful Acts / Human Rights Violations",
+        "tooltip": "Depicts or encourages violent crime, kidnapping, or human exploitation.",
+        "floor": true
+      },
+      {
+        "id": "death_injury_conflict",
+        "name": "Death, Injury or Military Conflict",
+        "tooltip": "Graphic injury, mass casualty events, executions; includes war reporting context.",
+        "floor": false
+      },
+      {
+        "id": "online_piracy",
+        "name": "Online Piracy",
+        "tooltip": "Illegal streaming, counterfeit distribution, malware download instructions.",
+        "floor": false
+      },
+      {
+        "id": "hate_speech",
+        "name": "Hate Speech & Acts of Aggression",
+        "tooltip": "Dehumanizing language targeting protected groups; hateful symbols or attacks.",
+        "floor": true
+      },
+      {
+        "id": "obscenity_profanity",
+        "name": "Obscenity & Profanity / Gory or Shocking",
+        "tooltip": "Intense profanity, graphic gore, shocking pranks. Consider reclaimed language nuance.",
+        "floor": false
+      },
+      {
+        "id": "illegal_drugs",
+        "name": "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)",
+        "tooltip": "Promotion or glamorization of illicit drugs or underage substance use.",
+        "floor": false
+      },
+      {
+        "id": "spam_harmful",
+        "name": "Spam or Harmful Content (malware/phishing)",
+        "tooltip": "Fraud schemes, phishing, malware distribution, brand impersonation.",
+        "floor": true
+      },
+      {
+        "id": "terrorism",
+        "name": "Terrorism",
+        "tooltip": "Praise, recruitment, or operational content for extremist organizations.",
+        "floor": true
+      },
+      {
+        "id": "sensitive_social",
+        "name": "Debated Sensitive Social Issues",
+        "tooltip": "Polarizing sociopolitical topics (e.g., elections, civil rights, climate policy).",
+        "floor": false
+      },
+      {
+        "id": "misinformation",
+        "name": "Misinformation",
+        "tooltip": "Verifiably false or misleading claims tied to public harm (health, civic, safety).",
+        "floor": true
+      }
+    ],
+    "risk_tiers": [
+      {"id": "LOW", "label": "Low", "definition": "Contextual adjacency acceptable with minimal safeguards."},
+      {"id": "MEDIUM", "label": "Medium", "definition": "Requires case-by-case review or stricter targeting controls."},
+      {"id": "HIGH", "label": "High", "definition": "Limited tolerance; high likelihood of reputational impact."},
+      {"id": "FLOOR", "label": "Floor", "definition": "Never monetize; exclusion list mandatory."}
+    ]
+  },
+  "iab_taxonomy": {
+    "about": {
+      "note": "IAB Content Taxonomy provides contextual classification distinct from brand safety decisions.",
+      "source": {
+        "label": "IAB Tech Lab Content Taxonomy 3.1",
+        "url": "https://iabtechlab.com/standards/content-taxonomy/"
+      }
+    },
+    "topics": [
+      "Arts & Entertainment",
+      "Business",
+      "Careers",
+      "Education",
+      "Family & Relationships",
+      "Health",
+      "News & Politics",
+      "Science",
+      "Sensitive Social Issues",
+      "Sports",
+      "Technology",
+      "Travel"
+    ]
+  }
+}

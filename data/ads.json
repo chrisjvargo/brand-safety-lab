@@ -1,0 +1,83 @@
+[
+  {
+    "id": "nike-speedlab",
+    "brand_key": "nike",
+    "headline": "Built with Athletes, Tested in the Speed Lab",
+    "body": "Prototype Vaporfly uppers, thermal plates, and data from world-class runners. See how Nike validates every launch before race day.",
+    "cta": "Explore the lab",
+    "url": "https://www.nike.com/running",
+    "image": "media/ads/gdelt_master/821dde3d62b58143abc1.jpg",
+    "tagline": "Proof-it runs before we say go."
+  },
+  {
+    "id": "lego-delorean",
+    "brand_key": "lego",
+    "headline": "Time-Travel Builds Are Back",
+    "body": "Celebrate the Back to the Future™ DeLorean with gull-wing doors, light-up flux capacitor, and movie-accurate minifigs.",
+    "cta": "Pre-order now",
+    "url": "https://www.lego.com",
+    "image": "media/ads/gdelt_master/fb1acac8c034cc1d0b32.jpg",
+    "tagline": "Great Scott! It’s brick-built nostalgia."
+  },
+  {
+    "id": "adidas-slipon",
+    "brand_key": "adidas",
+    "headline": "90s Energy. Slip-On Ease.",
+    "body": "The Intimidation Low returns with a laceless profile and updated cushioning. Styled for the tunnel, ready for the street.",
+    "cta": "Get the drop",
+    "url": "https://www.adidas.com",
+    "image": "media/ads/gdelt_master/7d134c3630815bfc8311.jpg",
+    "video": "media/ads/videos/adidas-one-team.mp4",
+    "tagline": "Slide into retro swagger."
+  },
+  {
+    "id": "amazon-holiday-hiring",
+    "brand_key": "amazon",
+    "headline": "Help Deliver the Holidays",
+    "body": "Join 250,000 seasonal associates and earn sign-on bonuses, flexible shifts, and tuition support while you power peak season.",
+    "cta": "View roles",
+    "url": "https://hiring.amazon.com",
+    "image": "media/ads/gdelt_master/e9f0d25bef4751d0ef4c.jpg",
+    "tagline": "Deliver joy. Unlock opportunity."
+  },
+  {
+    "id": "slimlife-scam",
+    "brand_key": "slimlife",
+    "headline": "Lose 30 lbs in 30 Days?",
+    "body": "Sketchy chum-box 'SlimLife Drops' ad promises miracle weight loss if you pay a shipping fee. Same creative is mirrored across countless scam sites collecting credit cards.",
+    "cta": "Claim the offer",
+    "url": "https://detox-slimlife.example.com",
+    "image": "media/ads/gdelt_master/d518bbda226aa1c41e6e.png",
+    "tagline": "Classic scam: too good to be true."
+  },
+  {
+    "id": "apple-upgrade-alert",
+    "brand_key": "apple",
+    "headline": "iPhone 15 Deals Just Dropped",
+    "body": "Save big on the A18-powered lineup, trade in instantly, and stack AppleCare+ for worry-free upgrades.",
+    "cta": "Shop offers",
+    "url": "https://www.apple.com",
+    "image": "media/ads/gdelt_master/4be60bd9638e221e4aed.jpg",
+    "tagline": "Upgrade without the wait."
+  },
+  {
+    "id": "cocacola-seasonal",
+    "brand_key": "cocacola",
+    "headline": "Taste the Season",
+    "body": "Limited-edition Coca-Cola® creations are back with nostalgic packaging and new holiday pairings.",
+    "cta": "Find nearby",
+    "url": "https://www.coca-cola.com",
+    "image": "media/ads/gdelt_master/b64aeb8b3b0a172f1b74.jpg",
+    "tagline": "The holidays start with a Coke."
+  },
+  {
+    "id": "liquiddeath-mango",
+    "brand_key": "liquiddeath",
+    "headline": "Murder Your Thirst, Mango Style",
+    "body": "Sparkling water, agave-sweetened, 20 calories. Tallboy attitude with a tropical finish.",
+    "cta": "Find a can",
+    "url": "https://liquiddeath.com",
+    "image": "media/ads/liquiddeath-mango.svg",
+    "tagline": "Recyclable cans, irreverent flavor."
+  }
+]
