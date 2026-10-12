@@ -1,5 +1,6 @@
 const STORAGE_KEY = "brandSafetyLab.labels";
 const IDENTIKEY_STORAGE_KEY = "brandSafetyLab.identikey";
+const NAME_STORAGE_KEY = "brandSafetyLab.name";
 const TIMER_SECONDS = 30 * 60;
 const BATCH_SIZE = 12;
 const DATA_ROOT = new URL("./data/", import.meta.url);
@@ -14,6 +15,7 @@ const state = {
   garmCategories: [],
   labels: JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"),
   identikey: localStorage.getItem(IDENTIKEY_STORAGE_KEY) || "",
+  name: localStorage.getItem(NAME_STORAGE_KEY) || "",
   answerKey: {},
   queue: [],
   rendered: new Map(),
@@ -86,13 +88,15 @@ function setupLogin() {
   const overlay = document.getElementById("loginOverlay");
   const form = document.getElementById("loginForm");
   const input = document.getElementById("identikeyInput");
+  const nameInput = document.getElementById("nameInput");
   const errorEl = document.getElementById("loginError");
-  if (!overlay || !form || !input) return;
+  if (!overlay || !form || !input || !nameInput) return;
 
-  if (state.identikey) {
+  if (state.identikey && state.name) {
     overlay.hidden = true;
     document.body.classList.remove("login-active");
     input.value = state.identikey;
+    nameInput.value = state.name;
     Object.keys(state.labels).forEach(applyAnswerFeedback);
     startTimer(TIMER_SECONDS);
     return;
@@ -100,12 +104,22 @@ function setupLogin() {
 
   overlay.hidden = false;
   document.body.classList.add("login-active");
-  input.focus();
+  if (state.identikey) input.value = state.identikey;
+  if (state.name) nameInput.value = state.name;
+  (state.name ? input : nameInput).focus();
 
   if (!form.dataset.bound) {
     form.addEventListener("submit", event => {
       event.preventDefault();
       const value = input.value.trim().toLowerCase();
+      const name = nameInput.value.trim().replace(/\s+/g, " ");
+      if (name.length < 2) {
+        if (errorEl) {
+          errorEl.textContent = "Enter your full name so your submission can be matched.";
+          errorEl.hidden = false;
+        }
+        return;
+      }
       if (!/^[a-z]{3,4}\d{2,5}$/i.test(value)) {
         if (errorEl) {
           errorEl.textContent = "Enter a valid Identikey (letters followed by numbers).";
@@ -116,6 +130,8 @@ function setupLogin() {
       if (errorEl) errorEl.hidden = true;
       state.identikey = value;
       localStorage.setItem(IDENTIKEY_STORAGE_KEY, value);
+      state.name = name;
+      localStorage.setItem(NAME_STORAGE_KEY, name);
       overlay.hidden = true;
       document.body.classList.remove("login-active");
       startTimer(TIMER_SECONDS);
@@ -590,9 +606,10 @@ function exportCsv() {
     alert("Judge at least one placement before exporting.");
     return;
   }
-  const header = ["identikey", "ad_id", "brand", "brand_key", "post_id", "decision", "garm", "timestamp"];
+  const header = ["identikey", "name", "ad_id", "brand", "brand_key", "post_id", "decision", "garm", "timestamp"];
   const rows = Object.entries(state.labels).map(([id, label]) => ([
     state.identikey || "",
+    state.name || "",
     id,
     label.brand || "",
     label.brand_key || "",

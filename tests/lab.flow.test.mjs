@@ -106,7 +106,8 @@ async function setup() {
   return { dom, window, $, $$, waitFor, sleep, ctx };
 }
 
-function login(window, $, identikey) {
+function login(window, $, identikey, name = "Test Student") {
+  $("#nameInput").value = name;
   $("#identikeyInput").value = identikey;
   $("#loginForm").dispatchEvent(
     new window.Event("submit", { bubbles: true, cancelable: true })
@@ -133,9 +134,13 @@ test("login validation", async () => {
     login(window, $, "xx");
     assert.equal($("#loginError").hidden, false);
     assert.equal($("#loginOverlay").hidden, false);
+    login(window, $, "abcd1234", "");
+    assert.equal($("#loginError").hidden, false);
+    assert.equal($("#loginOverlay").hidden, false);
     login(window, $, "abcd1234");
     assert.equal($("#loginOverlay").hidden, true);
     assert.equal(window.localStorage.getItem("brandSafetyLab.identikey"), "abcd1234");
+    assert.equal(window.localStorage.getItem("brandSafetyLab.name"), "Test Student");
   } finally {
     dom.window.close();
   }
@@ -272,8 +277,8 @@ test("CSV export carries identikey filename and guards empty sessions", async ()
     assert.match(ctx.downloads[0].download, /abcd1234.*\.csv$/);
     const text = await ctx.blobs[0].text();
     const [header, row] = text.trim().split("\n");
-    assert.equal(header, '"identikey","ad_id","brand","brand_key","post_id","decision","garm","timestamp"');
-    assert.match(row, /^"abcd1234",/);
+    assert.equal(header, '"identikey","name","ad_id","brand","brand_key","post_id","decision","garm","timestamp"');
+    assert.match(row, /^"abcd1234","Test Student",/);
   } finally {
     dom.window.close();
   }
