@@ -44,19 +44,16 @@ Recovered Oct 2026 from the Spring 2026 AWS Elastic Beanstalk deployment
 
 ## Real ads + pairing gold (Oct 2026)
 
-- All 24 ads are real creatives pulled verbatim from `kai_ctr`
-  (`creative_ctr.parquet`, Meta Ad Library crosswalk) by
-  `tools/build_real_ads.py`; selection + provenance in
-  `tools/real_ads_manifest.json`. No panel outcomes ship in this repo.
+- All 24 ads embed the actual creative file from `kai_ctr`
+  `creative_sample_50.zip` (15 photos + 9 short videos, web-sized by
+  `tools/build_sample50_ads.py` into `media/ads/real/`). Copy is the
+  matched Meta Ad Library body where it verifiably fits the visible
+  creative, otherwise transcribed from the creative itself. Selection
+  in `tools/sample50_manifest.json`. No panel outcomes ship here.
 - Gold standard is per post+ad pairing (`data/answer_key.json` keys are
   `postId__adId`): Floor posts block for every brand; suitability calls
-  follow each brand's `risk_posture` in `data/brand_profiles.json`.
-- Ad photos: original CDN URLs were retried at build time (banked bytes,
-  then live); all 24 had expired, and the Ad Library page blocks
-  unauthenticated fetches. Cards therefore render a brand tile + real
-  copy. To add a photo later, save it as `media/ads/real/<ad-id>.jpg`,
-  add `"image": "media/ads/real/<ad-id>.jpg"` to that ad in
-  `data/ads.json`, and re-run `npm test`.
+  follow each brand's type (charity/kids strict, mainstream managed,
+  playful/entertainment tolerant), explained in the feedback note.
 - Timer is 15 minutes, auto-starting at login (in class, Dr. Vargo runs
   the room timer; async students follow the on-screen timer).
 

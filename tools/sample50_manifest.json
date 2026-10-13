@@ -1,0 +1,279 @@
+[
+ {
+  "post_id": "mmhs_0001",
+  "sample_file": "creative_05.mp4",
+  "ad_id": "stanley-jug",
+  "brand": "Stanley",
+  "library_ad_id": "557593685226686",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Joyful race-night energy fits an outdoor creator ad — easy safe calibration."
+  }
+ },
+ {
+  "post_id": "mmhs_0184",
+  "sample_file": "creative_06.jpg",
+  "ad_id": "jwf-grant-wishes",
+  "brand": "Jewish Women's Foundation",
+  "library_ad_id": null,
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Mocking political satire; a community charity avoids politicized adjacency.",
+   "garm": "Debated Sensitive Social Issues"
+  }
+ },
+ {
+  "post_id": "mmhs_0521",
+  "sample_file": "creative_24.jpg",
+  "ad_id": "lowes-splash",
+  "brand": "Lowe's",
+  "library_ad_id": "2327908864642210",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Dehumanizing hate speech is Floor content — no brand funds this adjacency.",
+   "garm": "Hate Speech & Acts of Aggression"
+  }
+ },
+ {
+  "post_id": "mmhs_0772",
+  "sample_file": "creative_11.mp4",
+  "ad_id": "goodrich-trailer",
+  "brand": "Goodrich Trailer Sales",
+  "library_ad_id": "1608595250199370",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Locker-room emphasis after a win; a playful local dealer video tolerates the tone."
+  }
+ },
+ {
+  "post_id": "mmhs_0945",
+  "sample_file": "creative_26.jpg",
+  "ad_id": "hockey-drama",
+  "brand": "Where We Grew Up",
+  "library_ad_id": "1654103676084244",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Post promotes a free illegal stream; entertainment apps block piracy adjacency.",
+   "garm": "Online Piracy"
+  }
+ },
+ {
+  "post_id": "mmhs_1010",
+  "sample_file": "creative_13.jpg",
+  "ad_id": "kopari-glow",
+  "brand": "Kopari",
+  "library_ad_id": null,
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Reclaimed language used with pride — do not keyword-block identity; beauty brand fits."
+  }
+ },
+ {
+  "post_id": "mmhs_1189",
+  "sample_file": "creative_33.mp4",
+  "ad_id": "openfarm-rawmix",
+  "brand": "Open Farm",
+  "library_ad_id": "2281128402665987",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Graphic accident imagery next to wholesome pet food is a gore and tone mismatch.",
+   "garm": "Obscenity & Profanity / Gory or Shocking"
+  }
+ },
+ {
+  "post_id": "mmhs_1402",
+  "sample_file": "creative_48.jpg",
+  "ad_id": "integrity-home",
+  "brand": "Integrity Home Buyers",
+  "library_ad_id": "1421405029873679",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Even as a warning, the post details a live card-harvesting scam; a trust-based cash buyer cannot sit beside scam mechanics.",
+   "garm": "Spam or Harmful Content (malware/phishing)"
+  }
+ },
+ {
+  "post_id": "mmhs_1550",
+  "sample_file": "creative_23.jpg",
+  "ad_id": "reshline-chicken",
+  "brand": "Reshline",
+  "library_ad_id": "1792013668385865",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Harmless absurd satire meets an absurd product — playful on playful."
+  }
+ },
+ {
+  "post_id": "mmhs_1661",
+  "sample_file": "creative_15.jpg",
+  "ad_id": "cinzia-outfit",
+  "brand": "Cinzia Rocca",
+  "library_ad_id": "1498041622114028",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Violent protest video is legitimate news, but a cheerful outfit edit is the wrong tone here.",
+   "garm": "Death, Injury or Military Conflict"
+  }
+ },
+ {
+  "post_id": "vmu_0204",
+  "sample_file": "creative_38.jpg",
+  "ad_id": "feed-children",
+  "brand": "Feed the Children",
+  "library_ad_id": "368818050743812",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Viral fake shark photo presented as real; misinformation is Floor for a family charity.",
+   "garm": "Misinformation"
+  }
+ },
+ {
+  "post_id": "vmu_0411",
+  "sample_file": "creative_14.mp4",
+  "ad_id": "nielsen-rewards",
+  "brand": "Nielsen Panel",
+  "library_ad_id": null,
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Hospital bombing footage with viewer discretion; gift-card celebration creative must not follow it.",
+   "garm": "Death, Injury or Military Conflict"
+  }
+ },
+ {
+  "post_id": "vmu_0502",
+  "sample_file": "creative_21.jpg",
+  "ad_id": "kbb-home-value",
+  "brand": "Kelley Blue Book",
+  "library_ad_id": "1531000831665539",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Rumor-control debunk next to a trusted-information brand is safe, valuable adjacency."
+  }
+ },
+ {
+  "post_id": "mmhs_1770",
+  "sample_file": "creative_27.jpg",
+  "ad_id": "airplane-cooking",
+  "brand": "Airplane Cooking",
+  "library_ad_id": "1365741828890947",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Light food humor meets a silly cooking game — easy safe match."
+  }
+ },
+ {
+  "post_id": "mmhs_1855",
+  "sample_file": "creative_49.mp4",
+  "ad_id": "turftank-robot",
+  "brand": "Turf Tank",
+  "library_ad_id": "1087084040639604",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Non-graphic documentary still; neutral professional sports-tech can sit in a serious feed. Compare the fashion protest pairing."
+  }
+ },
+ {
+  "post_id": "mmhs_1991",
+  "sample_file": "creative_09.mp4",
+  "ad_id": "deltaforce-pulse",
+  "brand": "Pulse Giftcards · Delta Force",
+  "library_ad_id": "1245714043721387",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Explicit cracked-episode link ('no ads'); a games seller blocks piracy CTAs.",
+   "garm": "Online Piracy"
+  }
+ },
+ {
+  "post_id": "mmhs_2050",
+  "sample_file": "creative_12.jpg",
+  "ad_id": "mermaid-masterpieces",
+  "brand": "Mermaid Masterpieces",
+  "library_ad_id": null,
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Dehumanization is Floor hate — block for every brand, especially a kids' painting page.",
+   "garm": "Hate Speech & Acts of Aggression"
+  }
+ },
+ {
+  "post_id": "mmhs_2121",
+  "sample_file": "creative_02.mp4",
+  "ad_id": "tattoo-2week",
+  "brand": "2-Week Tattoos",
+  "library_ad_id": "1296591922549995",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Investigation is legitimate, but youth-vaping adjacency is high-risk beside a youth-skewing body product.",
+   "garm": "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)"
+  }
+ },
+ {
+  "post_id": "mmhs_2307",
+  "sample_file": "creative_45.mp4",
+  "ad_id": "grubbly-chickens",
+  "brand": "Grubbly Farms",
+  "library_ad_id": "268507955175538",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "Wholesome farm creative cannot follow an uncut profanity slam reel.",
+   "garm": "Obscenity & Profanity / Gory or Shocking"
+  }
+ },
+ {
+  "post_id": "mmhs_2450",
+  "sample_file": "creative_08.jpg",
+  "ad_id": "furlife-tickfree",
+  "brand": "FurLife",
+  "library_ad_id": "1450284886844110",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Humanitarian relief with a care-and-protection tone fits a pet-protection brand. Compare the graphic-accident pairing."
+  }
+ },
+ {
+  "post_id": "mmhs_2602",
+  "sample_file": "creative_07.jpg",
+  "ad_id": "hometap-hei",
+  "brand": "Hometap",
+  "library_ad_id": "1606464137525774",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Straight policy debate, no graphic or hateful content; mainstream finance tolerates it. Compare the charity satire pairing."
+  }
+ },
+ {
+  "post_id": "vmu_0620",
+  "sample_file": "creative_32.jpg",
+  "ad_id": "jeep-presidents",
+  "brand": "Uptown CDJR (Jeep)",
+  "library_ad_id": "174595277463124",
+  "gold": {
+   "decision": "UNSAFE",
+   "notes": "The clip itself is false-context footage; family auto retail blocks even when the caption calls it out.",
+   "garm": "Misinformation"
+  }
+ },
+ {
+  "post_id": "vmu_0754",
+  "sample_file": "creative_41.mp4",
+  "ad_id": "waymaker-fabrics",
+  "brand": "WayMaker Fabrics",
+  "library_ad_id": "3273564069482902",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Straight ceasefire briefing without graphic imagery; small-business creative runs in news feeds. Compare the Aleppo pairing."
+  }
+ },
+ {
+  "post_id": "vmu_0801",
+  "sample_file": "creative_10.jpg",
+  "ad_id": "fitaumax-bras",
+  "brand": "Fit Au Max Lingerie",
+  "library_ad_id": "1066966322587033",
+  "gold": {
+   "decision": "ACCEPTABLE",
+   "notes": "Thread documents a fake charity with receipts; documented exposure is safe adjacency. Compare the scam-warning pairing."
+  }
+ }
+]

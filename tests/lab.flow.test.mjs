@@ -303,15 +303,15 @@ test("pairing gold judges post+brand together; real ads show provenance", async 
   try {
     login(window, $, "abcd1234");
     const cards = $$("#timeline .ad-card");
-    // Pairing 1 (safe marathon + Crocs) is gold-safe; pairing 2 (political
-    // satire + LEGO) is gold-unsafe. Same SAFE click, opposite verdicts.
+    // Pairing 1 (safe marathon + Stanley) is gold-safe; pairing 2 (political
+    // satire + charity) is gold-unsafe. Same SAFE click, opposite verdicts.
     cards[0].querySelector(".ok").click();
     assert.equal(cards[0].dataset.correct, "correct");
     cards[1].querySelector(".ok").click();
     assert.equal(cards[1].dataset.correct, "incorrect");
     assert.match(cards[1].querySelector(".feedback").textContent, /UNSAFE/);
     assert.match(cards[0].querySelector(".provenance").textContent, /Meta Ad Library #\d+/);
-    assert.ok(cards[0].querySelector(".ad-fallback, .ad-media img"));
+    assert.ok(cards[0].querySelector(".ad-media img, .ad-media video"));
   } finally {
     dom.window.close();
   }

@@ -1,111 +1,111 @@
 {
- "mmhs_0001__crocs-classic-clog": {
+ "mmhs_0001__stanley-jug": {
   "decision": "ACCEPTABLE",
-  "notes": "Joyful race-night post; Crocs' playful comfort fits everyday sports buzz."
+  "notes": "Joyful race-night energy fits an outdoor creator ad — easy safe calibration."
  },
- "mmhs_0184__lego-momoa-play": {
+ "mmhs_0184__jwf-grant-wishes": {
   "decision": "UNSAFE",
-  "notes": "Political satire mocking a leader; LEGO's kid-safe profile avoids politicized content.",
+  "notes": "Mocking political satire; a community charity avoids politicized adjacency.",
   "garm": "Debated Sensitive Social Issues"
  },
- "mmhs_0521__walmart-free-assembly": {
+ "mmhs_0521__lowes-splash": {
   "decision": "UNSAFE",
   "notes": "Dehumanizing hate speech is Floor content — no brand funds this adjacency.",
   "garm": "Hate Speech & Acts of Aggression"
  },
- "mmhs_0772__dominos-half-off": {
+ "mmhs_0772__goodrich-trailer": {
   "decision": "ACCEPTABLE",
-  "notes": "Locker-room emphasis after a win, not targeted abuse; Domino's playful voice tolerates mild profanity."
+  "notes": "Locker-room emphasis after a win; a playful local dealer video tolerates the tone."
  },
- "mmhs_0945__netflix-set-it-up": {
+ "mmhs_0945__hockey-drama": {
   "decision": "UNSAFE",
-  "notes": "Post promotes an illegal stream; Netflix blocks piracy adjacency on sight.",
+  "notes": "Post promotes a free illegal stream; entertainment apps block piracy adjacency.",
   "garm": "Online Piracy"
  },
- "mmhs_1010__ulta-self-care": {
+ "mmhs_1010__kopari-glow": {
   "decision": "ACCEPTABLE",
-  "notes": "Reclaimed language used with pride by the community itself — do not keyword-block identity."
+  "notes": "Reclaimed language used with pride — do not keyword-block identity; beauty brand fits."
  },
- "mmhs_1189__chewy-dreambone": {
+ "mmhs_1189__openfarm-rawmix": {
   "decision": "UNSAFE",
-  "notes": "Graphic accident imagery next to wholesome pet treats is a tone and gore mismatch.",
+  "notes": "Graphic accident imagery next to wholesome pet food is a gore and tone mismatch.",
   "garm": "Obscenity & Profanity / Gory or Shocking"
  },
- "mmhs_1402__temu-bow-sweater": {
+ "mmhs_1402__integrity-home": {
   "decision": "UNSAFE",
-  "notes": "Even as a warning, the post details a live card-harvesting scam; marketplace Temu cannot sit beside scam mechanics.",
+  "notes": "Even as a warning, the post details a live card-harvesting scam; a trust-based cash buyer cannot sit beside scam mechanics.",
   "garm": "Spam or Harmful Content (malware/phishing)"
  },
- "mmhs_1550__doordash-come-back": {
+ "mmhs_1550__reshline-chicken": {
   "decision": "ACCEPTABLE",
-  "notes": "Harmless absurd satire with no target; DoorDash humor fits."
+  "notes": "Harmless absurd satire meets an absurd product — playful on playful."
  },
- "mmhs_1661__target-home-decor": {
+ "mmhs_1661__cinzia-outfit": {
   "decision": "UNSAFE",
-  "notes": "Violent protest video is legitimate news, but cheerful home-décor creative is the wrong tone for Target here.",
+  "notes": "Violent protest video is legitimate news, but a cheerful outfit edit is the wrong tone here.",
   "garm": "Death, Injury or Military Conflict"
  },
- "vmu_0204__disneyplus-student-deal": {
+ "vmu_0204__feed-children": {
   "decision": "UNSAFE",
-  "notes": "Viral fake shark photo presented as real; misinformation is Floor for Disney.",
+  "notes": "Viral fake shark photo presented as real; misinformation is Floor for a family charity.",
   "garm": "Misinformation"
  },
- "vmu_0411__starbucks-gift-card": {
+ "vmu_0411__nielsen-rewards": {
   "decision": "UNSAFE",
   "notes": "Hospital bombing footage with viewer discretion; gift-card celebration creative must not follow it.",
   "garm": "Death, Injury or Military Conflict"
  },
- "vmu_0502__walmart-spark": {
+ "vmu_0502__kbb-home-value": {
   "decision": "ACCEPTABLE",
-  "notes": "Rumor-control post debunks a recycled video; corrections are safe, valuable adjacency."
+  "notes": "Rumor-control debunk next to a trusted-information brand is safe, valuable adjacency."
  },
- "mmhs_1770__dominos-party-of-one": {
+ "mmhs_1770__airplane-cooking": {
   "decision": "ACCEPTABLE",
-  "notes": "Light food humor; easy safe match for Domino's."
+  "notes": "Light food humor meets a silly cooking game — easy safe match."
  },
- "mmhs_1855__netflix-lizzie-borden": {
+ "mmhs_1855__turftank-robot": {
   "decision": "ACCEPTABLE",
-  "notes": "Documentary still in a film-release context; adult streamer Netflix accepts non-graphic conflict storytelling. Compare the Target protest pairing."
+  "notes": "Non-graphic documentary still; neutral professional sports-tech can sit in a serious feed. Compare the fashion protest pairing."
  },
- "mmhs_1991__disneystore-halloween": {
+ "mmhs_1991__deltaforce-pulse": {
   "decision": "UNSAFE",
-  "notes": "Explicit cracked-episode link ('no ads'); Disney protects its IP and blocks piracy CTAs.",
+  "notes": "Explicit cracked-episode link ('no ads'); a games seller blocks piracy CTAs.",
   "garm": "Online Piracy"
  },
- "mmhs_2050__lego-fearless": {
+ "mmhs_2050__mermaid-masterpieces": {
   "decision": "UNSAFE",
-  "notes": "Dehumanization ('monsters', 'no mercy') is Floor hate — block for every brand, especially LEGO.",
+  "notes": "Dehumanization is Floor hate — block for every brand, especially a kids' painting page.",
   "garm": "Hate Speech & Acts of Aggression"
  },
- "mmhs_2121__ulta-woke-up": {
+ "mmhs_2121__tattoo-2week": {
   "decision": "UNSAFE",
-  "notes": "Investigation is legitimate, but youth-vaping adjacency is high-risk for Ulta's young beauty audience.",
+  "notes": "Investigation is legitimate, but youth-vaping adjacency is high-risk beside a youth-skewing body product.",
   "garm": "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)"
  },
- "mmhs_2307__crocs-toy-story": {
+ "mmhs_2307__grubbly-chickens": {
   "decision": "UNSAFE",
-  "notes": "Crocs tolerates edge — but this Toy Story kids'-collection creative cannot follow an uncut profanity reel.",
+  "notes": "Wholesome farm creative cannot follow an uncut profanity slam reel.",
   "garm": "Obscenity & Profanity / Gory or Shocking"
  },
- "mmhs_2450__chewy-fuel-for-life": {
+ "mmhs_2450__furlife-tickfree": {
   "decision": "ACCEPTABLE",
-  "notes": "Humanitarian relief with a pro-social tone; Chewy's community-care voice can sit here. Compare the graphic-accident pairing."
+  "notes": "Humanitarian relief with a care-and-protection tone fits a pet-protection brand. Compare the graphic-accident pairing."
  },
- "mmhs_2602__temu-app-deals": {
+ "mmhs_2602__hometap-hei": {
   "decision": "ACCEPTABLE",
-  "notes": "Straight policy debate, no graphic or hateful content; price-first Temu tolerates debated-issue adjacency. Compare the LEGO satire pairing."
+  "notes": "Straight policy debate, no graphic or hateful content; mainstream finance tolerates it. Compare the charity satire pairing."
  },
- "vmu_0620__target-pokemon": {
+ "vmu_0620__jeep-presidents": {
   "decision": "UNSAFE",
-  "notes": "The clip itself is false-context footage; family retail blocks even when the caption calls it out — skimmers still absorb the fake.",
+  "notes": "The clip itself is false-context footage; family auto retail blocks even when the caption calls it out.",
   "garm": "Misinformation"
  },
- "vmu_0754__starbucks-refreshers": {
+ "vmu_0754__waymaker-fabrics": {
   "decision": "ACCEPTABLE",
-  "notes": "Straight ceasefire news briefing without graphic imagery; mainstream Starbucks allows hard-news adjacency. Compare the Aleppo pairing."
+  "notes": "Straight ceasefire briefing without graphic imagery; small-business creative runs in news feeds. Compare the Aleppo pairing."
  },
- "vmu_0801__doordash-curry": {
+ "vmu_0801__fitaumax-bras": {
   "decision": "ACCEPTABLE",
-  "notes": "Thread documents and exposes a fake charity with receipts; exposure/reporting is safe for DoorDash. Compare the Temu scam-warning pairing."
+  "notes": "Thread documents a fake charity with receipts; documented exposure is safe adjacency. Compare the scam-warning pairing."
  }
 }

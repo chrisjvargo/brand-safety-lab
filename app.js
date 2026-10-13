@@ -8,7 +8,7 @@ const DATA_ROOT = new URL("./data/", import.meta.url);
 const state = {
   taxonomy: null,
   brandProfiles: {},
-  defaultBrand: "walmart",
+  defaultBrand: "lowes",
   allPosts: [],
   ads: [],
   adIndex: 0,
@@ -44,7 +44,7 @@ async function init() {
 
     state.taxonomy = taxonomy;
     state.brandProfiles = brandProfiles?.profiles || {};
-    state.defaultBrand = brandProfiles?.default || "walmart";
+    state.defaultBrand = brandProfiles?.default || "lowes";
     state.garmCategories = taxonomy?.garm?.categories || [];
     state.ads = Array.isArray(adsResponse) ? adsResponse : [];
     state.adIndex = 0;

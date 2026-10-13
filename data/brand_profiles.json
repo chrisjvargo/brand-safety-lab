@@ -1,90 +1,56 @@
 {
- "default": "walmart",
+ "default": "lowes",
  "profiles": {
-  "lego": {
-   "name": "LEGO",
-   "logo": "media/brands/lego.svg",
-   "color": "#c62828",
+  "stanley": {
+   "name": "Stanley",
+   "logo": "media/brands/stanley.svg",
+   "color": "#0f766e",
    "bullets": [
-    "Family-first, global kid-safe experience",
-    "Strict avoidance of explicit, violent, or adult themes",
-    "Prefers neutral, joyful cultural adjacency",
-    "Low tolerance for debated or politicized content"
+    "Outdoor gear · creator ad"
    ],
    "risk_posture": {
-    "Adult & Explicit Sexual Content": "FLOOR",
-    "Arms & Ammunition": "FLOOR",
-    "Crime & Harmful Acts / Human Rights Violations": "FLOOR",
-    "Death, Injury or Military Conflict": "FLOOR",
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
     "Online Piracy": "HIGH",
     "Hate Speech & Acts of Aggression": "FLOOR",
-    "Obscenity & Profanity / Gory or Shocking": "FLOOR",
-    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
     "Spam or Harmful Content (malware/phishing)": "FLOOR",
     "Terrorism": "FLOOR",
-    "Debated Sensitive Social Issues": "HIGH",
-    "Misinformation": "FLOOR"
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
    }
   },
-  "disney": {
-   "name": "Disney",
-   "logo": "media/brands/disney.svg",
-   "color": "#113ccf",
+  "jwf": {
+   "name": "Jewish Women's Foundation",
+   "logo": "media/brands/jwf.svg",
+   "color": "#6d28d9",
    "bullets": [
-    "Family entertainment across Disney+ and Disney Store",
-    "Protects its IP: zero tolerance for piracy adjacency",
-    "Kid-and-family trust rules out graphic or adult edges",
-    "Avoids politicized debate next to family creative"
+    "Charity · community grants"
    ],
    "risk_posture": {
     "Adult & Explicit Sexual Content": "FLOOR",
     "Arms & Ammunition": "HIGH",
     "Crime & Harmful Acts / Human Rights Violations": "HIGH",
     "Death, Injury or Military Conflict": "HIGH",
-    "Online Piracy": "FLOOR",
+    "Online Piracy": "HIGH",
     "Hate Speech & Acts of Aggression": "FLOOR",
     "Obscenity & Profanity / Gory or Shocking": "HIGH",
-    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "FLOOR",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
     "Spam or Harmful Content (malware/phishing)": "FLOOR",
     "Terrorism": "FLOOR",
     "Debated Sensitive Social Issues": "HIGH",
     "Misinformation": "FLOOR"
    }
   },
-  "walmart": {
-   "name": "Walmart",
-   "logo": "media/brands/walmart.svg",
-   "color": "#0071ce",
+  "lowes": {
+   "name": "Lowe's",
+   "logo": "media/brands/lowes.svg",
+   "color": "#004990",
    "bullets": [
-    "Mass mainstream: everyday value for every household",
-    "Comfortable in straight news, not graphic tragedy",
-    "Labor and community stories need careful tone",
-    "Blocks scams and misinformation that erode trust"
-   ],
-   "risk_posture": {
-    "Adult & Explicit Sexual Content": "HIGH",
-    "Arms & Ammunition": "MEDIUM",
-    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-    "Death, Injury or Military Conflict": "MEDIUM",
-    "Online Piracy": "HIGH",
-    "Hate Speech & Acts of Aggression": "FLOOR",
-    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-    "Spam or Harmful Content (malware/phishing)": "FLOOR",
-    "Terrorism": "FLOOR",
-    "Debated Sensitive Social Issues": "MEDIUM",
-    "Misinformation": "HIGH"
-   }
-  },
-  "target": {
-   "name": "Target",
-   "logo": "media/brands/target.svg",
-   "color": "#cc0000",
-   "bullets": [
-    "Mainstream style retail with a cheerful, design-led voice",
-    "Lifestyle creative clashes with violent or graphic moments",
-    "Family collections run stricter than general retail",
-    "Straight news is fine; misleading clips are not"
+    "Home retail · mainstream"
    ],
    "risk_posture": {
     "Adult & Explicit Sexual Content": "HIGH",
@@ -101,15 +67,12 @@
     "Misinformation": "HIGH"
    }
   },
-  "dominos": {
-   "name": "Domino's Pizza",
-   "logo": "media/brands/dominos.svg",
-   "color": "#0b648f",
+  "goodrich": {
+   "name": "Goodrich Trailer Sales",
+   "logo": "media/brands/goodrich.svg",
+   "color": "#44403c",
    "bullets": [
-    "Playful, meme-literate pizza voice",
-    "Comfortable with mild profanity and sports trash-talk",
-    "Cheerful food creative avoids tragedy adjacency",
-    "Everyday humor and satire are welcome"
+    "Local dealer · playful video"
    ],
    "risk_posture": {
     "Adult & Explicit Sexual Content": "HIGH",
@@ -122,94 +85,16 @@
     "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
     "Spam or Harmful Content (malware/phishing)": "HIGH",
     "Terrorism": "FLOOR",
-    "Debated Sensitive Social Issues": "MEDIUM",
+    "Debated Sensitive Social Issues": "LOW",
     "Misinformation": "HIGH"
    }
   },
-  "doordash": {
-   "name": "DoorDash",
-   "logo": "media/brands/doordash.svg",
-   "color": "#eb1700",
+  "hockeydrama": {
+   "name": "Where We Grew Up",
+   "logo": "media/brands/hockeydrama.svg",
+   "color": "#1e3a5f",
    "bullets": [
-    "Playful delivery voice built on cravings and local gems",
-    "Community and mutual-aid stories fit the brand",
-    "Mild edge and humor fine; graphic tragedy is not",
-    "Trust matters: documented fraud exposure differs from live scams"
-   ],
-   "risk_posture": {
-    "Adult & Explicit Sexual Content": "HIGH",
-    "Arms & Ammunition": "HIGH",
-    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
-    "Death, Injury or Military Conflict": "HIGH",
-    "Online Piracy": "MEDIUM",
-    "Hate Speech & Acts of Aggression": "FLOOR",
-    "Obscenity & Profanity / Gory or Shocking": "LOW",
-    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
-    "Spam or Harmful Content (malware/phishing)": "HIGH",
-    "Terrorism": "FLOOR",
-    "Debated Sensitive Social Issues": "MEDIUM",
-    "Misinformation": "HIGH"
-   }
-  },
-  "chewy": {
-   "name": "Chewy",
-   "logo": "media/brands/chewy.svg",
-   "color": "#128ced",
-   "bullets": [
-    "Wholesome pet-parent community voice",
-    "Pro-social and relief stories fit; gore never does",
-    "Avoids politicized debate next to pet creative",
-    "Warm tone must not follow graphic harm"
-   ],
-   "risk_posture": {
-    "Adult & Explicit Sexual Content": "HIGH",
-    "Arms & Ammunition": "HIGH",
-    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-    "Death, Injury or Military Conflict": "HIGH",
-    "Online Piracy": "HIGH",
-    "Hate Speech & Acts of Aggression": "FLOOR",
-    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-    "Spam or Harmful Content (malware/phishing)": "FLOOR",
-    "Terrorism": "FLOOR",
-    "Debated Sensitive Social Issues": "HIGH",
-    "Misinformation": "HIGH"
-   }
-  },
-  "ulta": {
-   "name": "Ulta Beauty",
-   "logo": "media/brands/ulta.svg",
-   "color": "#e91e63",
-   "bullets": [
-    "Beauty mainstream with a young, creator-led audience",
-    "Self-care voice avoids tragedy and graphic harm",
-    "Youth-substance topics are high-risk even in reporting",
-    "Pride and identity celebration are on-brand"
-   ],
-   "risk_posture": {
-    "Adult & Explicit Sexual Content": "HIGH",
-    "Arms & Ammunition": "HIGH",
-    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-    "Death, Injury or Military Conflict": "HIGH",
-    "Online Piracy": "HIGH",
-    "Hate Speech & Acts of Aggression": "FLOOR",
-    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-    "Spam or Harmful Content (malware/phishing)": "HIGH",
-    "Terrorism": "FLOOR",
-    "Debated Sensitive Social Issues": "MEDIUM",
-    "Misinformation": "HIGH"
-   }
-  },
-  "netflix": {
-   "name": "Netflix",
-   "logo": "media/brands/netflix.svg",
-   "color": "#141414",
-   "bullets": [
-    "Adult entertainment: sells dark drama and true crime itself",
-    "Documentary conflict storytelling can fit; graphic news still needs care",
-    "Piracy is existential: Floor, no exceptions",
-    "Profanity and edgy humor are native to the catalog"
+    "Short-drama app · entertainment"
    ],
    "risk_posture": {
     "Adult & Explicit Sexual Content": "MEDIUM",
@@ -226,40 +111,12 @@
     "Misinformation": "FLOOR"
    }
   },
-  "temu": {
-   "name": "Temu",
-   "logo": "media/brands/temu.svg",
-   "color": "#fb7701",
+  "kopari": {
+   "name": "Kopari",
+   "logo": "media/brands/kopari.svg",
+   "color": "#0284c7",
    "bullets": [
-    "Price-first marketplace with broad suitability tolerance",
-    "Fighting scam perception: live-scam adjacency is toxic",
-    "Policy debate and everyday edge are acceptable",
-    "Hate, terrorism, and misinformation still block"
-   ],
-   "risk_posture": {
-    "Adult & Explicit Sexual Content": "HIGH",
-    "Arms & Ammunition": "HIGH",
-    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-    "Death, Injury or Military Conflict": "MEDIUM",
-    "Online Piracy": "MEDIUM",
-    "Hate Speech & Acts of Aggression": "FLOOR",
-    "Obscenity & Profanity / Gory or Shocking": "LOW",
-    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-    "Spam or Harmful Content (malware/phishing)": "FLOOR",
-    "Terrorism": "FLOOR",
-    "Debated Sensitive Social Issues": "LOW",
-    "Misinformation": "HIGH"
-   }
-  },
-  "crocs": {
-   "name": "Crocs",
-   "logo": "media/brands/crocs.svg",
-   "color": "#6ab844",
-   "bullets": [
-    "Playful, irreverent comfort voice",
-    "Core brand tolerates edge and mild profanity",
-    "Kids' collab creatives run much stricter than core Crocs",
-    "Joyful sports and fandom moments are home turf"
+    "Beauty · sunscreen"
    ],
    "risk_posture": {
     "Adult & Explicit Sexual Content": "HIGH",
@@ -276,15 +133,34 @@
     "Misinformation": "HIGH"
    }
   },
-  "starbucks": {
-   "name": "Starbucks",
-   "logo": "media/brands/starbucks.svg",
-   "color": "#00704a",
+  "openfarm": {
+   "name": "Open Farm",
+   "logo": "media/brands/openfarm.svg",
+   "color": "#166534",
    "bullets": [
-    "Mainstream coffeehouse: warm, everyday, community-led",
-    "Hard-news briefings fine; graphic suffering is not",
-    "Celebration creative must not follow tragedy",
-    "Corrections and civic information fit the third-place role"
+    "Pet food · wholesome"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "FLOOR",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "HIGH",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "HIGH",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "integrityhome": {
+   "name": "Integrity Home Buyers",
+   "logo": "media/brands/integrityhome.svg",
+   "color": "#15803d",
+   "bullets": [
+    "Cash home buyer · direct response"
    ],
    "risk_posture": {
     "Adult & Explicit Sexual Content": "HIGH",
@@ -298,6 +174,358 @@
     "Spam or Harmful Content (malware/phishing)": "FLOOR",
     "Terrorism": "FLOOR",
     "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "reshline": {
+   "name": "Reshline",
+   "logo": "media/brands/reshline.svg",
+   "color": "#b45309",
+   "bullets": [
+    "Novelty gifts · playful"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "HIGH"
+   }
+  },
+  "cinzia": {
+   "name": "Cinzia Rocca",
+   "logo": "media/brands/cinzia.svg",
+   "color": "#65a30d",
+   "bullets": [
+    "Fashion · outfit edit"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "feedchildren": {
+   "name": "Feed the Children",
+   "logo": "media/brands/feedchildren.svg",
+   "color": "#ea580c",
+   "bullets": [
+    "Charity · families"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "FLOOR",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "HIGH",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "HIGH",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "nielsen": {
+   "name": "Nielsen Panel",
+   "logo": "media/brands/nielsen.svg",
+   "color": "#111827",
+   "bullets": [
+    "Research panel · gift-card rewards"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "kbb": {
+   "name": "Kelley Blue Book",
+   "logo": "media/brands/kbb.svg",
+   "color": "#1d4ed8",
+   "bullets": [
+    "Home values · trusted info"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "airplanecooking": {
+   "name": "Airplane Cooking",
+   "logo": "media/brands/airplanecooking.svg",
+   "color": "#0369a1",
+   "bullets": [
+    "Mobile game · playful"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "MEDIUM",
+    "Arms & Ammunition": "MEDIUM",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "FLOOR",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "HIGH",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "turftank": {
+   "name": "Turf Tank",
+   "logo": "media/brands/turftank.svg",
+   "color": "#14532d",
+   "bullets": [
+    "Sports tech · B2B robot"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "deltaforce": {
+   "name": "Pulse Giftcards · Delta Force",
+   "logo": "media/brands/deltaforce.svg",
+   "color": "#7f1d1d",
+   "bullets": [
+    "Gaming · gift cards"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "MEDIUM",
+    "Arms & Ammunition": "MEDIUM",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "FLOOR",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "HIGH",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "mermaid": {
+   "name": "Mermaid Masterpieces",
+   "logo": "media/brands/mermaid.svg",
+   "color": "#0e7490",
+   "bullets": [
+    "Kids' painting · creator"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "FLOOR",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "HIGH",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "HIGH",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "tattoo": {
+   "name": "2-Week Tattoos",
+   "logo": "media/brands/tattoo.svg",
+   "color": "#18181b",
+   "bullets": [
+    "Semi-permanent tattoos · youth-skewing"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "HIGH"
+   }
+  },
+  "grubbly": {
+   "name": "Grubbly Farms",
+   "logo": "media/brands/grubbly.svg",
+   "color": "#3f6212",
+   "bullets": [
+    "Chicken feed · sustainability"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "FLOOR",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "HIGH",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "HIGH",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "furlife": {
+   "name": "FurLife",
+   "logo": "media/brands/furlife.svg",
+   "color": "#16a34a",
+   "bullets": [
+    "Pet care · protection"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "HIGH"
+   }
+  },
+  "hometap": {
+   "name": "Hometap",
+   "logo": "media/brands/hometap.svg",
+   "color": "#1e40af",
+   "bullets": [
+    "Home finance · mainstream"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "jeepdealer": {
+   "name": "Uptown CDJR (Jeep)",
+   "logo": "media/brands/jeepdealer.svg",
+   "color": "#991b1b",
+   "bullets": [
+    "Auto dealer · mainstream retail"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "waymaker": {
+   "name": "WayMaker Fabrics",
+   "logo": "media/brands/waymaker.svg",
+   "color": "#155e75",
+   "bullets": [
+    "Fabric · small business"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "fitaumax": {
+   "name": "Fit Au Max Lingerie",
+   "logo": "media/brands/fitaumax.svg",
+   "color": "#44403c",
+   "bullets": [
+    "Apparel · fuller-bust bras"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "LOW",
     "Misinformation": "HIGH"
    }
   }
