@@ -1,35 +1,111 @@
 {
-  "nike-speedlab": {
-    "decision": "ACCEPTABLE",
-    "notes": "Performance storytelling aligns with Nike's comfort zone."
-  },
-  "lego-delorean": {
-    "decision": "ACCEPTABLE",
-    "notes": "Family-friendly nostalgia matches LEGO's suitability profile."
-  },
-  "adidas-slipon": {
-    "decision": "ACCEPTABLE",
-    "notes": "Product-focused creative with athletes fits Adidas' tone."
-  },
-  "amazon-holiday-hiring": {
-    "decision": "ACCEPTABLE",
-    "notes": "Seasonal hiring push is a routine business story with no major risk flags."
-  },
-  "slimlife-scam": {
-    "decision": "UNSAFE",
-    "garm": "Spam or Harmful Content (malware/phishing)",
-    "notes": "Miracle weight-loss chum box ad with phishing-style funnel\u2014classic spam/malware risk."
-  },
-  "apple-upgrade-alert": {
-    "decision": "ACCEPTABLE",
-    "notes": "Promotional coverage around deals aligns with Apple messaging."
-  },
-  "cocacola-seasonal": {
-    "decision": "ACCEPTABLE",
-    "notes": "Seasonal celebrations are on-brand for Coca-Cola."
-  },
-  "liquiddeath-mango": {
-    "decision": "ACCEPTABLE",
-    "notes": "Edgy beverage positioning matches Liquid Death's risk tolerance."
-  }
+ "mmhs_0001__crocs-classic-clog": {
+  "decision": "ACCEPTABLE",
+  "notes": "Joyful race-night post; Crocs' playful comfort fits everyday sports buzz."
+ },
+ "mmhs_0184__lego-momoa-play": {
+  "decision": "UNSAFE",
+  "notes": "Political satire mocking a leader; LEGO's kid-safe profile avoids politicized content.",
+  "garm": "Debated Sensitive Social Issues"
+ },
+ "mmhs_0521__walmart-free-assembly": {
+  "decision": "UNSAFE",
+  "notes": "Dehumanizing hate speech is Floor content — no brand funds this adjacency.",
+  "garm": "Hate Speech & Acts of Aggression"
+ },
+ "mmhs_0772__dominos-half-off": {
+  "decision": "ACCEPTABLE",
+  "notes": "Locker-room emphasis after a win, not targeted abuse; Domino's playful voice tolerates mild profanity."
+ },
+ "mmhs_0945__netflix-set-it-up": {
+  "decision": "UNSAFE",
+  "notes": "Post promotes an illegal stream; Netflix blocks piracy adjacency on sight.",
+  "garm": "Online Piracy"
+ },
+ "mmhs_1010__ulta-self-care": {
+  "decision": "ACCEPTABLE",
+  "notes": "Reclaimed language used with pride by the community itself — do not keyword-block identity."
+ },
+ "mmhs_1189__chewy-dreambone": {
+  "decision": "UNSAFE",
+  "notes": "Graphic accident imagery next to wholesome pet treats is a tone and gore mismatch.",
+  "garm": "Obscenity & Profanity / Gory or Shocking"
+ },
+ "mmhs_1402__temu-bow-sweater": {
+  "decision": "UNSAFE",
+  "notes": "Even as a warning, the post details a live card-harvesting scam; marketplace Temu cannot sit beside scam mechanics.",
+  "garm": "Spam or Harmful Content (malware/phishing)"
+ },
+ "mmhs_1550__doordash-come-back": {
+  "decision": "ACCEPTABLE",
+  "notes": "Harmless absurd satire with no target; DoorDash humor fits."
+ },
+ "mmhs_1661__target-home-decor": {
+  "decision": "UNSAFE",
+  "notes": "Violent protest video is legitimate news, but cheerful home-décor creative is the wrong tone for Target here.",
+  "garm": "Death, Injury or Military Conflict"
+ },
+ "vmu_0204__disneyplus-student-deal": {
+  "decision": "UNSAFE",
+  "notes": "Viral fake shark photo presented as real; misinformation is Floor for Disney.",
+  "garm": "Misinformation"
+ },
+ "vmu_0411__starbucks-gift-card": {
+  "decision": "UNSAFE",
+  "notes": "Hospital bombing footage with viewer discretion; gift-card celebration creative must not follow it.",
+  "garm": "Death, Injury or Military Conflict"
+ },
+ "vmu_0502__walmart-spark": {
+  "decision": "ACCEPTABLE",
+  "notes": "Rumor-control post debunks a recycled video; corrections are safe, valuable adjacency."
+ },
+ "mmhs_1770__dominos-party-of-one": {
+  "decision": "ACCEPTABLE",
+  "notes": "Light food humor; easy safe match for Domino's."
+ },
+ "mmhs_1855__netflix-lizzie-borden": {
+  "decision": "ACCEPTABLE",
+  "notes": "Documentary still in a film-release context; adult streamer Netflix accepts non-graphic conflict storytelling. Compare the Target protest pairing."
+ },
+ "mmhs_1991__disneystore-halloween": {
+  "decision": "UNSAFE",
+  "notes": "Explicit cracked-episode link ('no ads'); Disney protects its IP and blocks piracy CTAs.",
+  "garm": "Online Piracy"
+ },
+ "mmhs_2050__lego-fearless": {
+  "decision": "UNSAFE",
+  "notes": "Dehumanization ('monsters', 'no mercy') is Floor hate — block for every brand, especially LEGO.",
+  "garm": "Hate Speech & Acts of Aggression"
+ },
+ "mmhs_2121__ulta-woke-up": {
+  "decision": "UNSAFE",
+  "notes": "Investigation is legitimate, but youth-vaping adjacency is high-risk for Ulta's young beauty audience.",
+  "garm": "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)"
+ },
+ "mmhs_2307__crocs-toy-story": {
+  "decision": "UNSAFE",
+  "notes": "Crocs tolerates edge — but this Toy Story kids'-collection creative cannot follow an uncut profanity reel.",
+  "garm": "Obscenity & Profanity / Gory or Shocking"
+ },
+ "mmhs_2450__chewy-fuel-for-life": {
+  "decision": "ACCEPTABLE",
+  "notes": "Humanitarian relief with a pro-social tone; Chewy's community-care voice can sit here. Compare the graphic-accident pairing."
+ },
+ "mmhs_2602__temu-app-deals": {
+  "decision": "ACCEPTABLE",
+  "notes": "Straight policy debate, no graphic or hateful content; price-first Temu tolerates debated-issue adjacency. Compare the LEGO satire pairing."
+ },
+ "vmu_0620__target-pokemon": {
+  "decision": "UNSAFE",
+  "notes": "The clip itself is false-context footage; family retail blocks even when the caption calls it out — skimmers still absorb the fake.",
+  "garm": "Misinformation"
+ },
+ "vmu_0754__starbucks-refreshers": {
+  "decision": "ACCEPTABLE",
+  "notes": "Straight ceasefire news briefing without graphic imagery; mainstream Starbucks allows hard-news adjacency. Compare the Aleppo pairing."
+ },
+ "vmu_0801__doordash-curry": {
+  "decision": "ACCEPTABLE",
+  "notes": "Thread documents and exposes a fake charity with receipts; exposure/reporting is safe for DoorDash. Compare the Temu scam-warning pairing."
+ }
 }

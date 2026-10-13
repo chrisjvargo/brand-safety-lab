@@ -255,10 +255,10 @@ test("timer starts on login, not on page load", async () => {
   const { $, dom, window, sleep } = await setup();
   try {
     await sleep(1300);
-    assert.equal($("#timer").textContent, "30:00");
+    assert.equal($("#timer").textContent, "15:00");
     login(window, $, "abcd1234");
     await sleep(1200);
-    assert.match($("#timer").textContent, /^29:5[0-9]$/);
+    assert.match($("#timer").textContent, /^14:5[0-9]$/);
   } finally {
     dom.window.close();
   }
@@ -293,6 +293,25 @@ test("reset clears labels and counters", async () => {
     $("#resetSession").click();
     assert.equal($("#labeledCount").textContent, "0");
     assert.equal(window.localStorage.getItem("brandSafetyLab.labels"), null);
+  } finally {
+    dom.window.close();
+  }
+});
+
+test("pairing gold judges post+brand together; real ads show provenance", async () => {
+  const { $, $$, dom, window } = await setup();
+  try {
+    login(window, $, "abcd1234");
+    const cards = $$("#timeline .ad-card");
+    // Pairing 1 (safe marathon + Crocs) is gold-safe; pairing 2 (political
+    // satire + LEGO) is gold-unsafe. Same SAFE click, opposite verdicts.
+    cards[0].querySelector(".ok").click();
+    assert.equal(cards[0].dataset.correct, "correct");
+    cards[1].querySelector(".ok").click();
+    assert.equal(cards[1].dataset.correct, "incorrect");
+    assert.match(cards[1].querySelector(".feedback").textContent, /UNSAFE/);
+    assert.match(cards[0].querySelector(".provenance").textContent, /Meta Ad Library #\d+/);
+    assert.ok(cards[0].querySelector(".ad-fallback, .ad-media img"));
   } finally {
     dom.window.close();
   }

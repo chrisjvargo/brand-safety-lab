@@ -1,197 +1,305 @@
 {
-  "default": "nike",
-  "profiles": {
-    "nike": {
-      "name": "NIKE",
-      "logo": "media/brands/nike.svg",
-      "bullets": [
-        "Performance-first, mainstream audience",
-        "Zero tolerance for hate, terrorism, misinformation (Floor)",
-        "Cautious on graphic injury or conflict imagery (Med/High)",
-        "Comfortable near sports triumph and athlete storytelling"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "FLOOR",
-        "Arms & Ammunition": "HIGH",
-        "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-        "Death, Injury or Military Conflict": "MEDIUM",
-        "Online Piracy": "HIGH",
-        "Hate Speech & Acts of Aggression": "FLOOR",
-        "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-        "Spam or Harmful Content (malware/phishing)": "FLOOR",
-        "Terrorism": "FLOOR",
-        "Debated Sensitive Social Issues": "MEDIUM",
-        "Misinformation": "FLOOR"
-      }
-    },
-    "lego": {
-      "name": "LEGO",
-      "logo": "media/brands/lego.svg",
-      "bullets": [
-        "Family-first, global kid-safe experience",
-        "Strict avoidance of explicit, violent, or adult themes",
-        "Prefers neutral, joyful cultural adjacency",
-        "Low tolerance for debated or politicized content"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "FLOOR",
-        "Arms & Ammunition": "FLOOR",
-        "Crime & Harmful Acts / Human Rights Violations": "FLOOR",
-        "Death, Injury or Military Conflict": "FLOOR",
-        "Online Piracy": "HIGH",
-        "Hate Speech & Acts of Aggression": "FLOOR",
-        "Obscenity & Profanity / Gory or Shocking": "FLOOR",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "FLOOR",
-        "Spam or Harmful Content (malware/phishing)": "FLOOR",
-        "Terrorism": "FLOOR",
-        "Debated Sensitive Social Issues": "HIGH",
-        "Misinformation": "FLOOR"
-      }
-    },
-    "liquiddeath": {
-      "name": "Liquid Death",
-      "logo": "media/brands/liquiddeath.svg",
-      "bullets": [
-        "Metal-inspired irreverent brand voice",
-        "Comfortable with mild profanity and edgy humor",
-        "Still draws a hard line on hate, terrorism, misinformation",
-        "Prefers authenticity; satire and subculture references welcome"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "HIGH",
-        "Arms & Ammunition": "MEDIUM",
-        "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-        "Death, Injury or Military Conflict": "MEDIUM",
-        "Online Piracy": "MEDIUM",
-        "Hate Speech & Acts of Aggression": "FLOOR",
-        "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
-        "Spam or Harmful Content (malware/phishing)": "HIGH",
-        "Terrorism": "FLOOR",
-        "Debated Sensitive Social Issues": "MEDIUM",
-        "Misinformation": "FLOOR"
-      }
-    },
-    "amazon": {
-      "name": "Amazon",
-      "logo": "media/brands/amazon.svg",
-      "bullets": [
-        "Marketplace reach spans everyday essentials to premium tech",
-        "Brand-safe requirement near labor, compliance, and supply-chain topics",
-        "Comfortable near innovation, logistics, and productivity storytelling",
-        "Sensitive to counterfeit goods, worker mistreatment, and union conflict"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "FLOOR",
-        "Arms & Ammunition": "HIGH",
-        "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-        "Death, Injury or Military Conflict": "MEDIUM",
-        "Online Piracy": "FLOOR",
-        "Hate Speech & Acts of Aggression": "FLOOR",
-        "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-        "Spam or Harmful Content (malware/phishing)": "FLOOR",
-        "Terrorism": "FLOOR",
-        "Debated Sensitive Social Issues": "MEDIUM",
-        "Misinformation": "FLOOR"
-      }
-    },
-    "adidas": {
-      "name": "Adidas",
-      "logo": "media/brands/adidas.svg",
-      "bullets": [
-        "Performance heritage with lifestyle crossover",
-        "Supports inclusive, global sports narratives",
-        "Avoids adjacency to hate, doping, and athlete abuse",
-        "Prefers positive culture, fashion, and fitness stories"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "HIGH",
-        "Arms & Ammunition": "MEDIUM",
-        "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-        "Death, Injury or Military Conflict": "MEDIUM",
-        "Online Piracy": "HIGH",
-        "Hate Speech & Acts of Aggression": "FLOOR",
-        "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-        "Spam or Harmful Content (malware/phishing)": "HIGH",
-        "Terrorism": "FLOOR",
-        "Debated Sensitive Social Issues": "MEDIUM",
-        "Misinformation": "FLOOR"
-      }
-    },
-    "apple": {
-      "name": "Apple",
-      "logo": "media/brands/apple.svg",
-      "bullets": [
-        "Premium consumer tech audience",
-        "Showcase innovation, privacy, and accessibility themes",
-        "Avoid close association with device failures or regulatory fines",
-        "Sensitive to supply-chain labor critiques and political polarization"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "FLOOR",
-        "Arms & Ammunition": "MEDIUM",
-        "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
-        "Death, Injury or Military Conflict": "MEDIUM",
-        "Online Piracy": "FLOOR",
-        "Hate Speech & Acts of Aggression": "FLOOR",
-        "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-        "Spam or Harmful Content (malware/phishing)": "FLOOR",
-        "Terrorism": "FLOOR",
-        "Debated Sensitive Social Issues": "MEDIUM",
-        "Misinformation": "FLOOR"
-      }
-    },
-    "cocacola": {
-      "name": "Coca-Cola",
-      "logo": "media/brands/cocacola.svg",
-      "bullets": [
-        "Family-friendly global beverage brand",
-        "Values optimistic, celebratory storytelling",
-        "Avoids obesity, addiction, or political controversy discussions",
-        "Open to sports, music, and community celebration adjacencies"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "FLOOR",
-        "Arms & Ammunition": "HIGH",
-        "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-        "Death, Injury or Military Conflict": "HIGH",
-        "Online Piracy": "MEDIUM",
-        "Hate Speech & Acts of Aggression": "FLOOR",
-        "Obscenity & Profanity / Gory or Shocking": "FLOOR",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "FLOOR",
-        "Spam or Harmful Content (malware/phishing)": "MEDIUM",
-        "Terrorism": "FLOOR",
-        "Debated Sensitive Social Issues": "HIGH",
-        "Misinformation": "FLOOR"
-      }
-    },
-    "slimlife": {
-      "name": "SlimLife Drops",
-      "logo": "media/brands/slimlife.svg",
-      "bullets": [
-        "Questionable weight-loss supplement 'brand' used across chum-box ads",
-        "Sensational before/after claims with zero substantiation",
-        "Often tied to subscription traps and fake testimonials",
-        "High risk for misinformation, spam, and phishing tactics"
-      ],
-      "risk_posture": {
-        "Adult & Explicit Sexual Content": "MEDIUM",
-        "Arms & Ammunition": "MEDIUM",
-        "Crime & Harmful Acts / Human Rights Violations": "HIGH",
-        "Death, Injury or Military Conflict": "MEDIUM",
-        "Online Piracy": "HIGH",
-        "Hate Speech & Acts of Aggression": "HIGH",
-        "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
-        "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
-        "Spam or Harmful Content (malware/phishing)": "FLOOR",
-        "Terrorism": "HIGH",
-        "Debated Sensitive Social Issues": "MEDIUM",
-        "Misinformation": "FLOOR"
-      }
-    }
+ "default": "walmart",
+ "profiles": {
+  "lego": {
+   "name": "LEGO",
+   "logo": "media/brands/lego.svg",
+   "color": "#c62828",
+   "bullets": [
+    "Family-first, global kid-safe experience",
+    "Strict avoidance of explicit, violent, or adult themes",
+    "Prefers neutral, joyful cultural adjacency",
+    "Low tolerance for debated or politicized content"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "FLOOR",
+    "Arms & Ammunition": "FLOOR",
+    "Crime & Harmful Acts / Human Rights Violations": "FLOOR",
+    "Death, Injury or Military Conflict": "FLOOR",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "FLOOR",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "FLOOR",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "HIGH",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "disney": {
+   "name": "Disney",
+   "logo": "media/brands/disney.svg",
+   "color": "#113ccf",
+   "bullets": [
+    "Family entertainment across Disney+ and Disney Store",
+    "Protects its IP: zero tolerance for piracy adjacency",
+    "Kid-and-family trust rules out graphic or adult edges",
+    "Avoids politicized debate next to family creative"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "FLOOR",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "FLOOR",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "HIGH",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "FLOOR",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "HIGH",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "walmart": {
+   "name": "Walmart",
+   "logo": "media/brands/walmart.svg",
+   "color": "#0071ce",
+   "bullets": [
+    "Mass mainstream: everyday value for every household",
+    "Comfortable in straight news, not graphic tragedy",
+    "Labor and community stories need careful tone",
+    "Blocks scams and misinformation that erode trust"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "MEDIUM",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "target": {
+   "name": "Target",
+   "logo": "media/brands/target.svg",
+   "color": "#cc0000",
+   "bullets": [
+    "Mainstream style retail with a cheerful, design-led voice",
+    "Lifestyle creative clashes with violent or graphic moments",
+    "Family collections run stricter than general retail",
+    "Straight news is fine; misleading clips are not"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "dominos": {
+   "name": "Domino's Pizza",
+   "logo": "media/brands/dominos.svg",
+   "color": "#0b648f",
+   "bullets": [
+    "Playful, meme-literate pizza voice",
+    "Comfortable with mild profanity and sports trash-talk",
+    "Cheerful food creative avoids tragedy adjacency",
+    "Everyday humor and satire are welcome"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "doordash": {
+   "name": "DoorDash",
+   "logo": "media/brands/doordash.svg",
+   "color": "#eb1700",
+   "bullets": [
+    "Playful delivery voice built on cravings and local gems",
+    "Community and mutual-aid stories fit the brand",
+    "Mild edge and humor fine; graphic tragedy is not",
+    "Trust matters: documented fraud exposure differs from live scams"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "chewy": {
+   "name": "Chewy",
+   "logo": "media/brands/chewy.svg",
+   "color": "#128ced",
+   "bullets": [
+    "Wholesome pet-parent community voice",
+    "Pro-social and relief stories fit; gore never does",
+    "Avoids politicized debate next to pet creative",
+    "Warm tone must not follow graphic harm"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "HIGH",
+    "Misinformation": "HIGH"
+   }
+  },
+  "ulta": {
+   "name": "Ulta Beauty",
+   "logo": "media/brands/ulta.svg",
+   "color": "#e91e63",
+   "bullets": [
+    "Beauty mainstream with a young, creator-led audience",
+    "Self-care voice avoids tragedy and graphic harm",
+    "Youth-substance topics are high-risk even in reporting",
+    "Pride and identity celebration are on-brand"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
+  },
+  "netflix": {
+   "name": "Netflix",
+   "logo": "media/brands/netflix.svg",
+   "color": "#141414",
+   "bullets": [
+    "Adult entertainment: sells dark drama and true crime itself",
+    "Documentary conflict storytelling can fit; graphic news still needs care",
+    "Piracy is existential: Floor, no exceptions",
+    "Profanity and edgy humor are native to the catalog"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "MEDIUM",
+    "Arms & Ammunition": "MEDIUM",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "FLOOR",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "HIGH",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "FLOOR"
+   }
+  },
+  "temu": {
+   "name": "Temu",
+   "logo": "media/brands/temu.svg",
+   "color": "#fb7701",
+   "bullets": [
+    "Price-first marketplace with broad suitability tolerance",
+    "Fighting scam perception: live-scam adjacency is toxic",
+    "Policy debate and everyday edge are acceptable",
+    "Hate, terrorism, and misinformation still block"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "HIGH"
+   }
+  },
+  "crocs": {
+   "name": "Crocs",
+   "logo": "media/brands/crocs.svg",
+   "color": "#6ab844",
+   "bullets": [
+    "Playful, irreverent comfort voice",
+    "Core brand tolerates edge and mild profanity",
+    "Kids' collab creatives run much stricter than core Crocs",
+    "Joyful sports and fandom moments are home turf"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "MEDIUM",
+    "Death, Injury or Military Conflict": "HIGH",
+    "Online Piracy": "MEDIUM",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "LOW",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "MEDIUM",
+    "Spam or Harmful Content (malware/phishing)": "HIGH",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "LOW",
+    "Misinformation": "HIGH"
+   }
+  },
+  "starbucks": {
+   "name": "Starbucks",
+   "logo": "media/brands/starbucks.svg",
+   "color": "#00704a",
+   "bullets": [
+    "Mainstream coffeehouse: warm, everyday, community-led",
+    "Hard-news briefings fine; graphic suffering is not",
+    "Celebration creative must not follow tragedy",
+    "Corrections and civic information fit the third-place role"
+   ],
+   "risk_posture": {
+    "Adult & Explicit Sexual Content": "HIGH",
+    "Arms & Ammunition": "HIGH",
+    "Crime & Harmful Acts / Human Rights Violations": "HIGH",
+    "Death, Injury or Military Conflict": "MEDIUM",
+    "Online Piracy": "HIGH",
+    "Hate Speech & Acts of Aggression": "FLOOR",
+    "Obscenity & Profanity / Gory or Shocking": "MEDIUM",
+    "Illegal Drugs / Tobacco / Vaping / Alcohol (youth)": "HIGH",
+    "Spam or Harmful Content (malware/phishing)": "FLOOR",
+    "Terrorism": "FLOOR",
+    "Debated Sensitive Social Issues": "MEDIUM",
+    "Misinformation": "HIGH"
+   }
   }
+ }
 }

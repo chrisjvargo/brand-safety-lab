@@ -1,7 +1,7 @@
 {
   "name": "brand-safety-lab",
   "version": "1.0.0",
-  "description": "Student-facing interactive lab: judge post + ad adjacencies as SAFE or UNSAFE, tag unsafe ones with a GARM category, export a CSV for Canvas submission. 30-minute timer, Identikey login, all state in browser localStorage.",
+  "description": "Student-facing interactive lab: judge post + ad adjacencies as SAFE or UNSAFE, tag unsafe ones with a GARM category, export a CSV for Canvas submission. 15-minute timer, Identikey login, all state in browser localStorage.",
   "main": "app.js",
   "scripts": {
     "test": "node --experimental-vm-modules --test tests/lab.flow.test.mjs"

@@ -488,6 +488,39 @@ button:focus-visible {
   background: #f7f9fb;
 }
 
+.ad-card .provenance {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.ad-card .ad-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 150px;
+  padding: 24px 16px;
+  border-radius: 16px;
+  background: var(--card-alt);
+  color: #fff;
+  text-align: center;
+}
+
+.ad-card .ad-fallback-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.ad-card .ad-fallback-note {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
 .post[data-correct="correct"] {
   border-color: #3dd68c;
   box-shadow: 0 0 0 1px rgba(61, 214, 140, 0.4), 0 20px 40px rgba(22, 184, 99, 0.25);

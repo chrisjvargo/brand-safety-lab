@@ -2,7 +2,7 @@
 
 Student-facing interactive lab: judge post + ad adjacencies as SAFE or UNSAFE,
 tag unsafe ones with a GARM category, export a CSV for Canvas submission.
-30-minute timer, Identikey login, all state in browser localStorage.
+15-minute timer, Identikey login, all state in browser localStorage.
 
 Live: https://chrisjvargo.github.io/brand-safety-lab/
 
@@ -36,11 +36,29 @@ Recovered Oct 2026 from the Spring 2026 AWS Elastic Beanstalk deployment
 
 - Removed `trimHistory`: it deleted judged feed items once 48 nodes passed the
   36-node cap, with no way to get them back.
-- The 30-minute timer now starts at login instead of page load.
+- The 15-minute timer now starts at login instead of page load.
 - CSV export is blocked until at least one placement is judged, and the file
   is named `<identikey>-<timestamp>.csv` so submissions map to students.
 - Student-facing copy: dropped "facilitation notes" (no such feature) and the
   "local mirror" builder note.
+
+## Real ads + pairing gold (Oct 2026)
+
+- All 24 ads are real creatives pulled verbatim from `kai_ctr`
+  (`creative_ctr.parquet`, Meta Ad Library crosswalk) by
+  `tools/build_real_ads.py`; selection + provenance in
+  `tools/real_ads_manifest.json`. No panel outcomes ship in this repo.
+- Gold standard is per post+ad pairing (`data/answer_key.json` keys are
+  `postId__adId`): Floor posts block for every brand; suitability calls
+  follow each brand's `risk_posture` in `data/brand_profiles.json`.
+- Ad photos: original CDN URLs were retried at build time (banked bytes,
+  then live); all 24 had expired, and the Ad Library page blocks
+  unauthenticated fetches. Cards therefore render a brand tile + real
+  copy. To add a photo later, save it as `media/ads/real/<ad-id>.jpg`,
+  add `"image": "media/ads/real/<ad-id>.jpg"` to that ad in
+  `data/ads.json`, and re-run `npm test`.
+- Timer is 15 minutes, auto-starting at login (in class, Dr. Vargo runs
+  the room timer; async students follow the on-screen timer).
 
 ## Run locally
 

@@ -1,14 +1,14 @@
 const STORAGE_KEY = "brandSafetyLab.labels";
 const IDENTIKEY_STORAGE_KEY = "brandSafetyLab.identikey";
 const NAME_STORAGE_KEY = "brandSafetyLab.name";
-const TIMER_SECONDS = 30 * 60;
+const TIMER_SECONDS = 15 * 60;
 const BATCH_SIZE = 12;
 const DATA_ROOT = new URL("./data/", import.meta.url);
 
 const state = {
   taxonomy: null,
   brandProfiles: {},
-  defaultBrand: "nike",
+  defaultBrand: "walmart",
   allPosts: [],
   ads: [],
   adIndex: 0,
@@ -44,7 +44,7 @@ async function init() {
 
     state.taxonomy = taxonomy;
     state.brandProfiles = brandProfiles?.profiles || {};
-    state.defaultBrand = brandProfiles?.default || "nike";
+    state.defaultBrand = brandProfiles?.default || "walmart";
     state.garmCategories = taxonomy?.garm?.categories || [];
     state.ads = Array.isArray(adsResponse) ? adsResponse : [];
     state.adIndex = 0;
@@ -295,7 +295,7 @@ function populateAd(node, post, ad) {
   const brandProfile = state.brandProfiles[ad.brand_key] || {};
   const adId = `ad-${post.id}-${ad.id}`;
   node.dataset.id = adId;
-  node.dataset.answerKey = ad.id;
+  node.dataset.answerKey = `${post.id}__${ad.id}`;
   const logo = node.querySelector(".brandLogo");
   if (logo) {
     const logoPath = brandProfile.logo || "media/brands/brand-placeholder.svg";
@@ -326,6 +326,18 @@ function populateAd(node, post, ad) {
       img.src = resolveAsset(ad.image);
       img.alt = ad.headline || "Sponsored creative";
       media.appendChild(img);
+    } else {
+      const tile = document.createElement("div");
+      tile.className = "ad-fallback";
+      if (brandProfile.color) tile.style.background = brandProfile.color;
+      const tileBrand = document.createElement("span");
+      tileBrand.className = "ad-fallback-brand";
+      tileBrand.textContent = ad.advertiser || brandProfile.name || ad.brand_key;
+      const tileNote = document.createElement("span");
+      tileNote.className = "ad-fallback-note";
+      tileNote.textContent = "Sponsored · real ad copy below";
+      tile.append(tileBrand, tileNote);
+      media.appendChild(tile);
     }
   }
   const headline = node.querySelector(".headline");
@@ -339,6 +351,8 @@ function populateAd(node, post, ad) {
     cta.textContent = ad.cta || "Learn more";
     cta.href = ad.url || "#";
   }
+  const provenance = node.querySelector(".provenance");
+  if (provenance) provenance.textContent = ad.provenance || "";
 
   const baseLabel = {
     adId,
@@ -433,7 +447,9 @@ function applyAnswerFeedback(id) {
   const node = document.querySelector(`.post[data-id="${CSS.escape(id)}"]`);
   if (!node) return;
   const answerKeyId = node.dataset.answerKey;
-  const answer = answerKeyId ? state.answerKey?.[answerKeyId] : null;
+  const answer = answerKeyId
+    ? state.answerKey?.[answerKeyId] || state.answerKey?.[answerKeyId.split("__").pop()]
+    : null;
   const feedbackEl = node.querySelector(".feedback");
   if (!answer || !feedbackEl) {
     node.dataset.correct = "";
